@@ -3,13 +3,14 @@ import Left from './Left'
 import Right from './Right'
 function Hero() {
 
-  
+
 
     return (
         <section className='w-full h-[90vh] bg-gray-200 flex' >
-               <Left/>
-           <Right/>
-           
+            <Left />
+            <Right />
+            
+
         </section>
     )
 }
