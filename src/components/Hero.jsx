@@ -1,5 +1,5 @@
 import React from 'react'
-import { Download, ArrowRight, Instagram, Github, Facebook, Linkedin } from "lucide-react"
+import { Download, ArrowRight, Instagram, Github, Facebook, Linkedin } from "lucide-react";
 import Button from "./Button"
 import IconCircle from './IconCircle'
 function Hero() {
@@ -36,7 +36,6 @@ function Hero() {
 
             </div>
             <div className=" bg-blue-500  w-[50%] h-full ">
-
             </div>
         </section>
     )
