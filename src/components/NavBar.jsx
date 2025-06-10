@@ -2,7 +2,10 @@ import React from 'react'
 import Button from './Button'
 import Logo from "../assets/logos/logo-dark-transparent.png"
 
+
 function NavBar() {
+
+    
     return (
 
         <nav className="w-full h-[100px] bg-white shadow-md shadow-[#dad] flex items-center justify-between px-20 " >
