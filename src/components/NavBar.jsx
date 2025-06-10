@@ -21,7 +21,7 @@ function NavBar() {
                 <img src={Logo} className=" w-[160px] object-cover " alt="ogo" />
              </div>
             
-            <ul className=" hidden xl:flex gap-10 text-[25px]  uppercase font-semibold list-none  " >
+            <ul className=" hidden xl:flex gap-10 text-[22px]  uppercase font-semibold list-none  " >
                 <li className='mt-1 hover:text-[#a80a27] transition-all duration-300 ' ><a href='#' > Home</a> </li>
                 <li className='mt-1 hover:text-[#a80a27] transition-all duration-300 ' ><a href='#' > About</a> </li>
                 <li className='mt-1 hover:text-[#a80a27] transition-all duration-300 ' ><a href='#' > Portfolio</a> </li>
