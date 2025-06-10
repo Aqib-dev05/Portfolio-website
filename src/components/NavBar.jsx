@@ -2,7 +2,7 @@ import React from 'react'
 import Button from './Button'
 import Logo from "../assets/logos/logo-dark-transparent.png"
 import { Text } from "lucide-react";
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 
 function NavBar() {
 
@@ -10,6 +10,14 @@ function NavBar() {
     const handleOpen = () => {
         setIsOpen(!isOpen);
     };
+    useEffect(()=>{
+      if(isOpen) {
+        document.body.style.overflow = 'hidden';
+      }
+      else {
+        document.body.style.overflow = 'auto';
+      }
+    },[isOpen])
     // const handleClose = () => {
     //     setIsOpen(false);
     // }
