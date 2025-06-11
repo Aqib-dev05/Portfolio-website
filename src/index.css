@@ -3,3 +3,6 @@
 .ss{
     font-family: cursive;
 }
+.blen{
+    -webkit-background-clip: text;
+}
