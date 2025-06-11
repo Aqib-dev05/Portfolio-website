@@ -15,7 +15,7 @@ function Left() {
     ];
   return (
 
-    <div className="  lg:w-[55%] w-full max-lg:h-full pt-35 lg:pl-6  flex flex-col max-lg:justify-center max-lg:items-center ">
+    <div className="  lg:w-[55%] w-full max-lg:h-full pt-35 lg:pl-6 xl:pl-10  flex flex-col max-lg:justify-center max-lg:items-center ">
                 <p className='uppercase max-sm:text-[16px] text-2xl font-semibold text-[rgba(66,65,65,0.61)] '>Welcome To My World</p>
                 <h1 className='font-bold max-sm:text-4xl  text-8xl   ' >Hi I'm  Aqib Ali </h1>
                 <h2 className='font-semibold max-sm:text-3xl pb-2  text-5xl mt-5  bg-gradient-to-l  from-[#a80a27] to-[#8c0eca] text-transparent w-fit blen  ' >Frontend Developer </h2>
