@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Button({text,className="",varient="default",onClick,icon}) {
+export default function Button({text,type="button",className="",varient="default",onClick,icon}) {
 
     const baseStyles = "font-semibold flex items-center max-sm:gap-1  gap-2 justify-center text-[20px] w-fit h-[50px] font-medium px-6 max-sm:px-3 rounded-[6px] cursor-pointer border transition-all duration-300 ";
     const varientStyles = {
@@ -10,6 +10,6 @@ export default function Button({text,className="",varient="default",onClick,icon
     };
 
     return (
-        <button onClick={onClick} className={`${baseStyles}  ${varientStyles[varient]} ${className}  `}  >{text} {icon} </button>
+        <button type={type}  onClick={onClick} className={`${baseStyles}  ${varientStyles[varient]} ${className}  `}  >{text} {icon} </button>
     )
 }
