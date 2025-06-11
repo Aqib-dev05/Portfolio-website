@@ -5,4 +5,5 @@
 }
 .blen{
     -webkit-background-clip: text;
+    background-clip: text;
 }
