@@ -3,7 +3,7 @@ import Cartoon from "../assets/Pics/3542.jpg";
 import Button from "./Button";
 function About() {
   return (
-    <section className="w-full lg:min-h-[80vh]  pt-20 bg-gray-300 flex max-lg:flex-col max-lg:items-center max-lg:justify-center  ">
+    <section className="w-full lg:min-h-[80vh] pb-5  pt-20 bg-gray-300 flex max-lg:flex-col max-lg:items-center max-lg:justify-center  ">
       <div className="left  lg:w-[50%] lg:min-h-[100%] flex items-center justify-center  ">
         <div
           className="p-2 "
