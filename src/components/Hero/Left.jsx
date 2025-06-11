@@ -10,7 +10,7 @@ function Left() {
       const socialLinks = [
         { icon: <Instagram strokeWidth={2} size={30} />, link: "https://instagram.com/aqibali025" },
         { icon: <Github strokeWidth={2} size={30} />, link: "https://github.com/Aqib-dev05" },
-        { icon: <Facebook strokeWidth={2} size={30} />, link: "https://facebook.com" },
+        { icon: <Facebook strokeWidth={2} size={30} />, link: "https://facebook.com/profile.php?id=100059532027132&mibextid=rS40aB7S9Ucbxw6v" },
         { icon: <Linkedin strokeWidth={2} size={30} />, link: "https://linkedin.com/in/aqib-ali-37a6a3357" }
     ];
   return (
