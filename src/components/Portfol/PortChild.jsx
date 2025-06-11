@@ -5,8 +5,8 @@ import Button from "../Button"
 function PortChild({alignment = "flex-row",borderColor = "aqua"}) {
   return (
     <div className={`w-full my-4 gap-6 py-2 ${alignment}  flex max-lg:flex-col items-center justify-center `} >
-        <div style={{borderColor:borderColor}} className={`lg:w-[50%]  max-sm:w-[310px] w-[500px]  h-fit    rounded-2xl max-lg:border-[8px] lg:border-[12px] `} >
-            <img className='object-cover w-[100%] '  src={Pic} alt="" />
+        <div style={{borderColor:borderColor}} className={`lg:w-[50%] overflow-hidden  max-sm:w-[310px] w-[500px]  h-fit    rounded-2xl max-lg:border-[8px] lg:border-[12px] `} >
+            <img className='object-cover w-[100%] hover:scale-[1.25] transition-all duration-300 '  src={Pic} alt="" />
         </div>
         <div className='lg:w-[50%] w-full flex justify-center items-center lg:block flex-col  '>
             <h4 className='text-[blue] text-xl  ' >Project 1</h4>

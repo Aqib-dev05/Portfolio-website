@@ -41,7 +41,7 @@ function Services() {
         <p className='lg:w-[40%] w-[86%] text-center mx-auto my-5 text-lg'>We deliver high-quality digital solutions crafted to meet your specific needs and exceed expectations.</p>
         <div className="w-full xl:w-[85%] mx-auto md:p-6 p-2  rounded-lg  flex flex-wrap justify-center items-center gap-8">
             {services.map((service) => (
-                <div key={service.id} className="flex w-[310px] h-[450px] bg-[#a80a272a] rounded-2xl min-h-[300px] flex-col items-start gap-4 p-6 border-b border-gray-200">
+                <div key={service.id} className="flex hover:border-[#a80a27] hover:border-2 hover:scale-[1.05] transition-[scale] duration-200 ease-out w-[310px] h-[450px] bg-[#a80a272a] rounded-2xl min-h-[300px] flex-col items-start gap-4 p-6 border-b border-gray-200">
                     <div className="flex items-center justify-center w-11 h-11 bg-[#a80a27] rounded-full">
                         {service.icon}
                     </div>
