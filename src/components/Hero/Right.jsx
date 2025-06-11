@@ -28,8 +28,9 @@ function Right() {
               <div className="absolute w-full h-full animate-spin" style={{ animation: 'spin 50s linear infinite' }}>
                 <p ref={text} className='ss absolute xl:text-4xl lg:text-3xl md:text-2xl sm:text-xl text-lg'
                   style={{
-                    top: '-54px',
-                    left: '50%',
+                    top: (window.innerWidth >= 10 && window.innerWidth < 640) ? '-32px' : 
+                         (window.innerWidth >= 640 && window.innerWidth < 1280) ? '-45px' : '-54px',
+                    left: (window.innerWidth >= 10 && window.innerWidth < 640) ? '49.9%' : '50%',
                     transform: 'translateX(-50%)',
                     width: '100%',
                     textAlign: 'center'
