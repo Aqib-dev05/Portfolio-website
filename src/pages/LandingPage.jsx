@@ -4,15 +4,17 @@ import Hero from '../components/Hero/Hero'
 import About from "../components/About"
 import Portfolio from '../components/Portfolio'
 import Services from '../components/Services'
+import Experience from '../components/Experience'
 
 function LandingPage() {
   return (
     <>
-    <NavBar/>
+    {/* <NavBar/>
     <Hero/>
     <About/>
     <Portfolio isHome={true} />
-    <Services/>
+    <Services/> */}
+    <Experience isFull={true} />
     </>
   )
 }
