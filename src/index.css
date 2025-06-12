@@ -20,7 +20,7 @@ body{
     transform: translateX(10px);
 }
 .service-card:hover.service-card .sr-ico{
-    scale: 1.15;
+    scale: 1.1;
 }
 .service-card:hover.service-card .sr-ico .zzz {
     rotate: 5deg;
