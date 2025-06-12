@@ -11,7 +11,7 @@ function LandingPage() {
     <NavBar/>
     <Hero/>
     <About/>
-    <Portfolio isHome={true} />
+    <Portfolio isHome={false} />
     <Services/>
     </>
   )
