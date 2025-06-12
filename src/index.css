@@ -65,3 +65,29 @@ body {
 .service-card:hover.service-card .sr-ico .zzz {
     rotate: 5deg;
 }
+.left-slider{
+    animation: Slide-Left 40s linear infinite;
+}
+.right-slider{
+    animation: Slide-Right 40s linear infinite;
+}
+.left-slider div:hover,.right-slider div:hover {
+     box-shadow: 0 0 12px #a80a27;
+}
+
+@keyframes Slide-Left {
+    from{
+        transform: translateX(100vw);
+    }
+    to{
+        transform: translateX(-100vw);
+    }
+}
+@keyframes Slide-Right {
+    from{
+        transform: translateX(-100vw);
+    }
+    to{
+        transform: translateX(100vw);
+    }
+}

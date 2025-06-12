@@ -9,11 +9,11 @@ import Experience from '../components/Experience'
 function LandingPage() {
   return (
     <>
-    {/* <NavBar/>
+    <NavBar/>
     <Hero/>
     <About/>
     <Portfolio isHome={true} />
-    <Services/> */}
+    <Services/>
     <Experience isFull={true} />
     </>
   )
