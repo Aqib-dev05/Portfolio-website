@@ -35,7 +35,7 @@ function Services() {
 
   return (
     <section className="w-full py-10">
-      <h2 className="text-center py-4 text-5xl border-b-4 border-[#a80a27] w-fit mx-auto font-extrabold">
+      <h2 className="text-center font-[Dance] py-4 text-5xl border-b-4 border-[#a80a27] w-fit mx-auto font-extrabold">
         Our{" "}
         <span className="bg-gradient-to-b  from-[#a80a27] to-[#6a039e] blen text-transparent">
           Services

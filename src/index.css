@@ -1,27 +1,67 @@
 @import "tailwindcss";
 
-.ss{
+@font-face {
+    font-family: Roboto;
+    src: url("/src/assets/fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: Tan;
+    src: url("/src/assets/fonts/TAN\ KULTURE-DISPLAY.otf");
+}
+
+@font-face {
+    font-family: Creep;
+    src: url("/src/assets/fonts/Creepster-Regular.ttf");
+}
+
+@font-face {
+    font-family: Dance;
+    src: url("/src/assets/fonts/DancingScript-Regular.ttf");
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url("/src/assets/fonts/Poppins-Regular.ttf");
+}
+
+@theme {
+        --font-display: 'Tan',
+        --font-display:'Roboto',
+        --font-desplay:'Dance',
+        --font-desplay:'Creep',
+        --font-desplay:'Poppins',
+
+}
+
+.ss {
     font-family: cursive;
 }
-.blen{
+
+.blen {
     -webkit-background-clip: text;
     background-clip: text;
 }
-body{
+
+body {
     overflow-x: hidden;
+    font-family: 'Poppins';
 }
 
-.service-card:hover{
+.service-card:hover {
     scale: 1.02;
     border: 1px solid #a80a27;
     box-shadow: 0 0 12px #a80a27;
 }
-.service-card:hover.service-card a{
+
+.service-card:hover.service-card a {
     transform: translateX(10px);
 }
-.service-card:hover.service-card .sr-ico{
+
+.service-card:hover.service-card .sr-ico {
     scale: 1.1;
 }
+
 .service-card:hover.service-card .sr-ico .zzz {
     rotate: 5deg;
 }
