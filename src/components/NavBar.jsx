@@ -25,7 +25,7 @@ function NavBar() {
     return (
             <>
         <nav className="w-full h-[100px] bg-white shadow-md shadow-[#dad] flex items-center justify-between 2xl:px-24 xl:px-3 lg:px-16 max-md:px-4 max-lg:px-20  " >
-             <div className="flex h-full w-[160px] items-center justify-center">
+             <div className="flex h-full  items-center justify-center">
                 <img src={Logo} className=" w-[160px] max-sm:w-[100px] object-cover " alt="ogo" />
              </div>
             
