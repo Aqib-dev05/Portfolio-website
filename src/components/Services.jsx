@@ -49,7 +49,7 @@ function Services() {
         {services.map((service) => (
           <div
             key={service.id}
-            className=" service-card transition-all duration-300 flex  w-[310px] xl:h-[470px] h-[450px] max-sm:h-[auto] max-sm:px-4 max-sm:py-6  bg-[#a80a272a] rounded-2xl  flex-col items-start gap-4 p-6 border-b border-gray-200"
+            className=" service-card transition-all duration-300 flex  w-[310px] xl:h-[460px] h-[450px] max-sm:h-[auto] max-sm:px-4 max-sm:py-6  bg-[#a80a272a] rounded-2xl  flex-col items-start gap-4 p-6 border-b border-gray-200"
           >
             <div className="flex sr-ico transition-all duration-600 items-center justify-center w-11 h-11 bg-[#a80a27] rounded-full">
               {service.icon}
