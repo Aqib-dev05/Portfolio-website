@@ -10,9 +10,9 @@ import Panda from "../assets/Pics/pnda.png";
 import Ecom from "../assets/Pics/ecom.png";
 import Button from "./Button";
 
-function Portfolio({isHome}) {
+function Portfolio({ isFull }) {
   const ProjDesc = [
-       {
+    {
       id: 1,
       title: "Ecommerce Website",
       description:
@@ -39,7 +39,7 @@ function Portfolio({isHome}) {
       link: "https://aqib-wizard-x.vercel.app/",
       borderColor: "crimson",
     },
-     {
+    {
       id: 4,
       title: "Weather App",
       description:
@@ -57,7 +57,7 @@ function Portfolio({isHome}) {
       link: "https://aqib-tictac.vercel.app/",
       borderColor: "#0000a8",
     },
-       {
+    {
       id: 6,
       title: "Todo List App",
       description:
@@ -67,42 +67,43 @@ function Portfolio({isHome}) {
       borderColor: "#c7d41c",
     },
     {
-      id:7,
-      title:"Panda Login Page",
-      description:"A Login page made in javaScript,Whole Panda is created using Css ,Dynamic eyes which changes on inputs.",
-     image:Panda,
-     link:"https://panda-loginnpage.netlify.app/",
-     borderColor:"#a80a27",
+      id: 7,
+      title: "Panda Login Page",
+      description: "A Login page made in javaScript,Whole Panda is created using Css ,Dynamic eyes which changes on inputs.",
+      image: Panda,
+      link: "https://panda-loginnpage.netlify.app/",
+      borderColor: "#a80a27",
     }
   ];
 
-  const ProjDescShort = ProjDesc.slice(0,2);  //for home page
+  const ProjDescShort = ProjDesc.slice(0, 2);  //for home page
 
 
   return (
     <section className="bg-gray-200 py-10">
       <h2 className=" font-[Dance] border-b-4 border-[#a80a27] text-center text-5xl  font-bold  w-fit mx-auto p-5 ">
-       My <span className="bg-gradient-to-l  from-[#a80a27] to-[#8c0eca] text-transparent  blen">Portfolio</span> 
+        My <span className="bg-gradient-to-l  from-[#a80a27] to-[#8c0eca] text-transparent  blen">Portfolio</span>
       </h2>
       <div className="lg:w-[80%] mt-10 mx-auto p-5 flex justify-center items-center flex-col gap-6 ">
 
-       {isHome ? (
-         ProjDescShort.map((proj, index) => (
-          <PortChild
-            key={proj.id + index}
-            alignment={index % 2 === 0 ? "flex-row" : "flex-row-reverse"}
-            {...proj}
-          />
-        ))
-       ):(
-         ProjDesc.map((proj, index) => (
-          <PortChild
-            key={proj.id + index}
-            alignment={index % 2 === 0 ? "flex-row" : "flex-row-reverse"}
-            {...proj}
-          />
-        ))
-       )}
+        {isFull ? (
+          ProjDesc.map((proj, index) => (
+            <PortChild
+              key={proj.id + index}
+              alignment={index % 2 === 0 ? "flex-row" : "flex-row-reverse"}
+              {...proj}
+            />
+          ))
+        ) : (
+
+          ProjDescShort.map((proj, index) => (
+            <PortChild
+              key={proj.id + index}
+              alignment={index % 2 === 0 ? "flex-row" : "flex-row-reverse"}
+              {...proj}
+            />
+          ))
+        )}
 
         <Button text="View All Projects" />
       </div>

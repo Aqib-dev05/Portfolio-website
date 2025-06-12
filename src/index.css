@@ -71,8 +71,12 @@ body {
 .right-slider{
     animation: Slide-Right 40s linear infinite;
 }
-.left-slider div:hover,.right-slider div:hover {
+.left-slider div:hover,.right-slider div:hover,.exp-card:hover {
      box-shadow: 0 0 12px #a80a27;
+}
+.abc{
+     box-shadow: 0 0 4px #a80a27;
+
 }
 
 @keyframes Slide-Left {
