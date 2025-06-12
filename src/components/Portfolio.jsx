@@ -84,7 +84,7 @@ function Portfolio({isHome}) {
       <h2 className=" font-[Dance] border-b-4 border-[#a80a27] text-center text-5xl  font-bold  w-fit mx-auto p-5 ">
        My <span className="bg-gradient-to-l  from-[#a80a27] to-[#8c0eca] text-transparent  blen">Portfolio</span> 
       </h2>
-      <div className="lg:w-[80%] mx-auto p-5 flex justify-center items-center flex-col gap-6 ">
+      <div className="lg:w-[80%] mt-10 mx-auto p-5 flex justify-center items-center flex-col gap-6 ">
 
        {isHome ? (
          ProjDescShort.map((proj, index) => (
