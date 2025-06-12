@@ -10,3 +10,18 @@
 body{
     overflow-x: hidden;
 }
+
+.service-card:hover{
+    scale: 1.02;
+    border: 1px solid #a80a27;
+    box-shadow: 0 0 12px #a80a27;
+}
+.service-card:hover.service-card a{
+    transform: translateX(10px);
+}
+.service-card:hover.service-card .sr-ico{
+    scale: 1.15;
+}
+.service-card:hover.service-card .sr-ico .zzz {
+    rotate: 5deg;
+}
