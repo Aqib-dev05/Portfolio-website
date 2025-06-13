@@ -52,11 +52,11 @@ function NavBar() {
               <X color="#ffff" size={48} />
             </button> */}
             <ul className="flex flex-col items-center justify-center mt-16 gap-4 text-[22px] uppercase font-medium list-none  " >
-                <li className='mt-1 hover:text-[#a80a27] transition-all duration-300 ' ><Link to={"/"} > Home</Link> </li>
-                <li className='mt-1 hover:text-[#a80a27] transition-all duration-300 ' ><Link to={"/about"} > About</Link> </li>
-                <li className='mt-1 hover:text-[#a80a27] transition-all duration-300 ' ><Link to={"/portfolio"} > Portfolio</Link> </li>
-                <li className='mt-1 hover:text-[#a80a27] transition-all duration-300 ' ><Link to={"/service"} > Services</Link> </li>
-                <li className='mt-1 hover:text-[#a80a27] transition-all duration-300 ' ><Link to={"/experience"} > Experience</Link> </li>
+                <li className='mt-1 hover:text-[#a80a27] transition-all duration-300 ' ><Link onClick={()=>setIsOpen(false)} to={"/"} > Home</Link> </li>
+                <li className='mt-1 hover:text-[#a80a27] transition-all duration-300 ' ><Link onClick={()=>setIsOpen(false)} to={"/about"} > About</Link> </li>
+                <li className='mt-1 hover:text-[#a80a27] transition-all duration-300 ' ><Link onClick={()=>setIsOpen(false)} to={"/portfolio"} > Portfolio</Link> </li>
+                <li className='mt-1 hover:text-[#a80a27] transition-all duration-300 ' ><Link onClick={()=>setIsOpen(false)} to={"/service"} > Services</Link> </li>
+                <li className='mt-1 hover:text-[#a80a27] transition-all duration-300 ' ><Link onClick={()=>setIsOpen(false)} to={"/experience"} > Experience</Link> </li>
                 <li className='xl:ml-20'><Button varient='outlined' text="Contact"/></li>
             </ul>
           </div>
