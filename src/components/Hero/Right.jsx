@@ -14,7 +14,7 @@ function Right() {
   },);
 
   return (
-    <div className="lg:w-[45%] w-full flex items-center justify-center">
+    <div className="lg:w-[45%] w-full overflow-x-hidden flex items-center justify-center">
       <div className="p-5 max-sm:p-2" style={{
         // background: 'linear-gradient(to bottom, #a80a27, #6a058e)',
         borderRadius: '50%',
