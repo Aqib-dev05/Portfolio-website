@@ -9,6 +9,7 @@ import Tod from "../assets/Pics/tdo.png";
 import Panda from "../assets/Pics/pnda.png";
 import Ecom from "../assets/Pics/ecom.png";
 import Button from "./Button";
+import { Link } from "react-router";
 
 function Portfolio({ isFull }) {
   const ProjDesc = [
@@ -105,7 +106,7 @@ function Portfolio({ isFull }) {
           ))
         )}
 
-        <Button text="View All Projects" />
+        {isFull ? "": <Link to={"/portfolio"}  ><Button text="View All Projects" /></Link> }
       </div>
     </section>
   );

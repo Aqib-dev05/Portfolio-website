@@ -1,6 +1,8 @@
 import React from "react";
 import Cartoon from "../assets/Pics/3542.jpg";
 import Button from "./Button";
+import { Link } from "react-router";
+
 function About() {
   return (
     <section className="w-full lg:min-h-[80vh] pb-5  pt-20 bg-gray-300 flex max-lg:flex-col max-lg:items-center max-lg:justify-center  ">
@@ -54,9 +56,9 @@ function About() {
           Let’s create something impactful together!
         </p>
         <div className="flex gap-4 mt-8 w-full max-lg:justify-center">
-          <a href="#">
+          <Link to={"/experience"} >
             <Button text="Main Skills" />
-          </a>
+          </Link>
         </div>
       </div>
     </section>
