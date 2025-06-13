@@ -9,12 +9,12 @@ import Contact from "../components/Contact";
 function LandingPage() {
   return (
     <>
-      {/* <NavBar />
+      <NavBar />
       <Hero />
       <About />
       <Portfolio isFull={false} />
       <Services />
-      <Experience isFull={false} /> */}
+      <Experience isFull={false} />
       <Contact />
     </>
   );

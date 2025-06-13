@@ -1,3 +1,4 @@
+
 import React from 'react'
 import Button from './Button'
 import Logo from "../assets/logos/logo-dark-transparent.png"
@@ -30,11 +31,11 @@ function NavBar() {
              </div>
             
             <ul className=" hidden xl:flex gap-10 text-[22px]  uppercase font-semibold list-none  " >
-                <li className='mt-1 hover:text-[#a80a27] transition-all duration-300 ' ><a href='#' > Home</a> </li>
-                <li className='mt-1 hover:text-[#a80a27] transition-all duration-300 ' ><a href='#' > About</a> </li>
-                <li className='mt-1 hover:text-[#a80a27] transition-all duration-300 ' ><a href='#' > Portfolio</a> </li>
-                <li className='mt-1 hover:text-[#a80a27] transition-all duration-300 ' ><a href='#' > Services</a> </li>
-                <li className='mt-1 hover:text-[#a80a27] transition-all duration-300 ' ><a href='#' > Experience</a> </li>
+                <li className='mt-1 cursor-pointer hover:text-[#a80a27] transition-all duration-300 ' ><a   > Home</a> </li>
+                <li className='mt-1 cursor-pointer hover:text-[#a80a27] transition-all duration-300 ' ><a  > About</a> </li>
+                <li className='mt-1 cursor-pointer hover:text-[#a80a27] transition-all duration-300 ' ><a   > Portfolio</a> </li>
+                <li className='mt-1 cursor-pointer hover:text-[#a80a27] transition-all duration-300 ' ><a  > Services</a> </li>
+                <li className='mt-1 cursor-pointer hover:text-[#a80a27] transition-all duration-300 ' ><a  > Experience</a> </li>
                 <li className='xl:ml-20'><Button text="Contact"/></li>
             </ul>
   

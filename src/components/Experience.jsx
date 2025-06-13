@@ -88,7 +88,7 @@ function Experience({ isFull }) {
   //Short Slider
   if (!isFull) {
     return (
-      <section className="overflow-hidden bg-gray-300 pt-7 pb-16   flex flex-col lg:gap-10 items-center justify-center w-full  ">
+      <section className="overflow-hidden bg-gray-200 pt-7 pb-16   flex flex-col lg:gap-10 items-center justify-center w-full  ">
         <h2 className="text-center font-[Dance] py-4 text-5xl border-b-4 border-[#a80a27] w-fit mx-auto font-extrabold">
           <span className="bg-gradient-to-b  from-[#a80a27] to-[#6a039e] blen text-transparent">
             Tech

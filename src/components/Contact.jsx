@@ -23,7 +23,7 @@ function Contact() {
       link: "https://github.com/Aqib-dev05",
     },
     {
-      icon: <Facebook strokeWidth={2} size={30} />,
+      icon: <Facebook  strokeWidth={2} size={30} />,
       link: "https://facebook.com/profile.php?id=100059532027132&mibextid=rS40aB7S9Ucbxw6v",
     },
     {
@@ -37,7 +37,7 @@ function Contact() {
   ];
   return (
     <>
-      <section className="flex py-8 max-lg:flex-col items-center gap-8 lg:px-4 xl:px-8 bg-gray-300 ">
+      <section className=" pt-30 flex py-8 max-lg:flex-col items-center gap-8 lg:px-4 xl:px-8 bg-gray-300 ">
         <div className="lg:w-[50%] w-full  p-1">
           <h3 className="text-3xl uppercase font-bold ">contact</h3>
           <h5 className="mt-8 text-xl font-bold">Drop Me a Message</h5>
@@ -53,7 +53,7 @@ function Contact() {
               </div>
 
               <a
-                className="hover:text-[#a80a27] transition-all duration-300 "
+                className="hover:text-[#a80a27] hover:translate-x-2 transition-all duration-300 "
                 target="_blank"
                 href="tel:+923284169020"
               >
@@ -67,7 +67,7 @@ function Contact() {
               </div>
 
               <a
-                className="hover:text-[#a80a27] transition-all duration-300 "
+                className="hover:text-[#a80a27] hover:translate-x-2 transition-all duration-300 "
                 target="_blank"
                 href="mailto:aqibgithub@gmail.com"
               >
@@ -81,7 +81,7 @@ function Contact() {
               </div>
 
               <a
-                className="hover:text-[#a80a27] transition-all duration-300 "
+                className="hover:text-[#a80a27] hover:translate-x-2 transition-all duration-300 "
                 target="_blank"
                 href="https://www.google.com/maps/place/Sharaqpur,+Pakistan"
               >
@@ -119,7 +119,7 @@ function Contact() {
         </div>
       </section>
       <div className="h-[1px]  bg-gray-400" ></div>
-      <footer className="bg-gray-300 flex-wrap flex items-center justify-between p-10 max-lg:p-2 ">
+      <footer className="bg-gray-300 flex-wrap flex items-center justify-between py-12 px-15 max-md:px-4 max-lg:px-9 ">
         <div className="flex items-center justify-center gap-2">
           <img className="w-[180px] max-lg:w-[140px] " src={Logo} alt="aqib" />
            <p>
@@ -130,7 +130,7 @@ function Contact() {
         <div className="flex items-center justify-center gap-5 max-md:w-full max-md:mt-5  ">
           {
             FooterIcons.map((el,i) =>(
-              <a href={el.link} key={i} className="text-[#a80a27a8] hover:text-[#a80a27] transition-all duration-300 " >
+              <a href={el.link} key={i} className="text-[#a80a27a8] hover:text-[#a80a27]  transition-all duration-300 " >
                 {el.icon}
               </a>
             ) )
