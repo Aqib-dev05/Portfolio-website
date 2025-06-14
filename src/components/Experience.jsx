@@ -181,7 +181,8 @@ function Experience({ isFull }) {
                   </div>
                   <div className="bg-gray-300 max-sm:mt-1 mt-2 h-3 rounded-4xl">
                     <div
-                      className={`bg-[#a80a27] w-80 h-full rounded-4xl w-[${elem.proficiency}] `}
+                      className="bg-[#a80a27] h-full rounded-4xl"
+                      style={{ width: elem.proficiency }}
                     ></div>
                   </div>
                 </div>
