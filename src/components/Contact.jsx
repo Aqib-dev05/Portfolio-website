@@ -50,7 +50,7 @@ function Contact() {
   ];
   return (
     <>
-      <section className=" pt-30 flex py-8 max-lg:flex-col items-center gap-8 lg:px-4 xl:px-8 bg-gray-300 ">
+      <section id="contact" className=" pt-30 flex py-8 max-lg:flex-col items-center gap-8 lg:px-4 xl:px-8 bg-gray-300 ">
         <div className="lg:w-[50%] w-full  p-1">
           <h3 className="text-3xl uppercase font-bold ">contact</h3>
           <h5 className="mt-8 text-xl font-bold">Drop Me a Message</h5>

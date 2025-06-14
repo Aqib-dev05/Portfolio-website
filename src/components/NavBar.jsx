@@ -36,7 +36,7 @@ function NavBar() {
                 <li className='mt-1 cursor-pointer hover:text-[#a80a27] transition-all duration-300 ' ><Link to={"/portfolio"}  > Portfolio</Link> </li>
                 <li className='mt-1 cursor-pointer hover:text-[#a80a27] transition-all duration-300 ' ><Link to={"/service"} > Services</Link> </li>
                 <li className='mt-1 cursor-pointer hover:text-[#a80a27] transition-all duration-300 ' ><Link to={"/experience"} > Experience</Link> </li>
-                <li className='xl:ml-20'><Button text="Contact"/></li>
+                <a href='#contact'  style={{scrollBehavior:`smooth`}} className='xl:ml-20'><Button  text="Contact"/></a>
             </ul>
   
              <button onClick={handleOpen} className='bg-white block xl:hidden rounded-[8px]' >
