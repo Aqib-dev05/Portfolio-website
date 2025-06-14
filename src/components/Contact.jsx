@@ -23,6 +23,7 @@ function Contact() {
   useEffect(() => {
     if (state.succeeded) {
       window.location.reload();
+      
     }
   }, [state.succeeded]);
 
@@ -113,6 +114,7 @@ function Contact() {
               name="name"
               placeholder="Name"
               required
+              
             />
             <input
               className="w-full h-11 rounded-xl p-4  text-xl border-1 border-[#a80a27] focus:outline-0  bg-gray-100"
@@ -125,6 +127,8 @@ function Contact() {
               className="w-full h-30 rounded-xl p-4  text-xl border-1 border-[#a80a27] focus:outline-0  bg-gray-100"
               name="message"
               placeholder="Message"
+              required
+              minLength={1}
             ></textarea>
 
             <Button disabled={state.submitting} type="submit" text={state.submitting ? "sending" : "send"} className="w-full" />
