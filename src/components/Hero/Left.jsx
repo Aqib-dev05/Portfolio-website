@@ -5,39 +5,39 @@ import IconCircle from './IconCircle'
 
 function Left() {
 
-  
 
-      const socialLinks = [
+
+    const socialLinks = [
         { icon: <Instagram strokeWidth={2} size={30} />, link: "https://instagram.com/aqibali025" },
         { icon: <Github strokeWidth={2} size={30} />, link: "https://github.com/Aqib-dev05" },
         { icon: <Facebook strokeWidth={2} size={30} />, link: "https://facebook.com/profile.php?id=100059532027132&mibextid=rS40aB7S9Ucbxw6v" },
         { icon: <Linkedin strokeWidth={2} size={30} />, link: "https://linkedin.com/in/aqib-ali-37a6a3357" }
     ];
-  return (
+    return (
 
-    <div className="  lg:w-[55%] w-full max-lg:h-full pt-35 lg:pl-6 xl:pl-10  flex flex-col max-lg:justify-center max-lg:items-center ">
-                <p className='uppercase max-sm:text-[16px] text-2xl font-semibold text-[rgba(66,65,65,0.61)] '>Welcome To My World</p>
-                <h1 className='font-bold max-sm:text-4xl text-8xl ' >Hi I'm  Aqib Ali </h1>
-                <h2 className=' max-sm:text-2xl pb-2 font-[Tan]  text-4xl mt-5  bg-gradient-to-l  from-[#a80a27] to-[#8c0eca] text-transparent w-fit blen  ' >Frontend Developer </h2>
-                <p className='mt-5 max-sm:text-[20px] text-[22px] max-lg:w-[90%] lg:w-[86%] font-medium text-[rgba(66,65,65,0.61)] '>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, voluptatum consequuntur consequatur laudantium cupiditate possimus aliquid voluptates.</p>
+        <div className="  lg:w-[55%] w-full max-lg:h-full pt-35 lg:pl-6 xl:pl-10  flex flex-col max-lg:justify-center max-lg:items-center ">
+            <p className='uppercase max-sm:text-[16px] text-2xl font-semibold text-[rgba(66,65,65,0.61)] '>Welcome To My World</p>
+            <h1 className='font-bold max-sm:text-4xl text-8xl ' >Hi I'm  Aqib Ali </h1>
+            <h2 className=' max-sm:text-2xl pb-2 font-[Tan]  text-4xl mt-5  bg-gradient-to-l  from-[#a80a27] to-[#8c0eca] text-transparent w-fit blen  ' >Frontend Developer </h2>
+            <p className='mt-5 max-sm:text-[20px] text-[22px] max-lg:w-[90%] lg:w-[86%] font-medium text-[rgba(66,65,65,0.61)] '>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, voluptatum consequuntur consequatur laudantium cupiditate possimus aliquid voluptates.</p>
 
-                <div className='mt-10 flex max-sm:gap-1 gap-6'>
-                    <Button text="Hire Me!" icon={<ArrowRight />} />
-                    <Button text="Download CV" icon={<Download />} varient='shadowed' />
-                </div>
-                <div className=' mt-18 h-[60px] flex items-center justify-center max-sm:gap-3 gap-6 w-fit '>
-                    {
-                        socialLinks.map((item, index) => (
-                            <IconCircle key={index} icon={item.icon} url={item.link} />
-                        ))
+            <div className='mt-10 flex max-sm:gap-1 gap-6'>
+                <Button text="Hire Me!" icon={<ArrowRight />} />
+                <Button text="Download CV" icon={<Download />} varient='shadowed' />
+            </div>
+            <div className=' mt-18 h-[60px] flex items-center justify-center max-sm:gap-3 gap-6 w-fit '>
+                {
+                    socialLinks.map((item, index) => (
+                        <IconCircle key={index} icon={item.icon} url={item.link} />
+                    ))
 
-                    }
-
-                </div>
+                }
 
             </div>
-   
-  )
+
+        </div>
+
+    )
 }
 
 export default Left
