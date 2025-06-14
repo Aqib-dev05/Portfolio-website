@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useForm, ValidationError } from "@formspree/react";
 import {
   Phone,
   Mail,
@@ -11,8 +12,20 @@ import {
 } from "lucide-react";
 import Logo from "../assets/logos/logo-dark-transparent.png";
 import Button from "./Button";
+
+
 function Contact() {
+
+  const [state, handleSubmit] = useForm("xpwrrako");
   const year = new Date().getFullYear();
+
+
+  useEffect(() => {
+    if (state.succeeded) {
+      window.location.reload();
+    }
+  }, [state.succeeded]);
+
   const FooterIcons = [
     {
       icon: <Instagram strokeWidth={2} size={30} />,
@@ -23,7 +36,7 @@ function Contact() {
       link: "https://github.com/Aqib-dev05",
     },
     {
-      icon: <Facebook  strokeWidth={2} size={30} />,
+      icon: <Facebook strokeWidth={2} size={30} />,
       link: "https://facebook.com/profile.php?id=100059532027132&mibextid=rS40aB7S9Ucbxw6v",
     },
     {
@@ -31,7 +44,7 @@ function Contact() {
       link: "https://linkedin.com/in/aqib-ali-37a6a3357",
     },
     {
-       icon: <Twitter strokeWidth={2} size={30} />,
+      icon: <Twitter strokeWidth={2} size={30} />,
       link: "https://www.twitter.com",
     },
   ];
@@ -93,28 +106,28 @@ function Contact() {
         </div>
         {/* form */}
         <div className="lg:w-[50%] w-[96%] ">
-          <form className="flex flex-col px-7 py-7 max-md:px-4 max-xl:px-5 gap-5 rounded-3xl bg-gray-100 border-1 border-[#a80a27] items-center justify-center">
+          <form onSubmit={handleSubmit} className="flex flex-col px-7 py-7 max-md:px-4 max-xl:px-5 gap-5 rounded-3xl bg-gray-100 border-1 border-[#a80a27] items-center justify-center">
             <input
               className="w-full h-11 rounded-xl p-4  text-xl border-1 border-[#a80a27] focus:outline-0  bg-gray-100"
               type="text"
-              name=""
+              name="name"
               placeholder="Name"
               required
             />
             <input
               className="w-full h-11 rounded-xl p-4  text-xl border-1 border-[#a80a27] focus:outline-0  bg-gray-100"
               type="email"
-              name=""
+              name="email"
               placeholder="Email"
               required
             />
             <textarea
               className="w-full h-30 rounded-xl p-4  text-xl border-1 border-[#a80a27] focus:outline-0  bg-gray-100"
-              name=""
+              name="message"
               placeholder="Message"
             ></textarea>
 
-            <Button type="submit" text="Send" className="w-full" />
+            <Button disabled={state.submitting} type="submit" text={state.submitting ? "sending" : "send"} className="w-full" />
           </form>
         </div>
       </section>
@@ -122,18 +135,18 @@ function Contact() {
       <footer className="bg-gray-300 flex-wrap flex items-center justify-between py-12 px-15 max-md:px-4 max-lg:px-9 ">
         <div className="flex items-center justify-center gap-2">
           <img className="w-[180px] max-lg:w-[140px] " src={Logo} alt="aqib" />
-           <p>
-          {"\u00A9"} {year} Protfolio.All rights reserved.{" "}
-        </p>
+          <p>
+            {"\u00A9"} {year} Protfolio.All rights reserved.{" "}
+          </p>
         </div>
-       
+
         <div className="flex items-center justify-center gap-5 max-md:w-full max-md:mt-5  ">
           {
-            FooterIcons.map((el,i) =>(
+            FooterIcons.map((el, i) => (
               <a href={el.link} key={i} className="text-[#a80a27a8] hover:text-[#a80a27]  transition-all duration-300 " >
                 {el.icon}
               </a>
-            ) )
+            ))
           }
         </div>
       </footer>

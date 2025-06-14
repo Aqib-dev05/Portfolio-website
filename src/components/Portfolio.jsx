@@ -74,7 +74,8 @@ function Portfolio({ isFull }) {
       image: Panda,
       link: "https://panda-loginnpage.netlify.app/",
       borderColor: "#a80a27",
-    }
+    },
+
   ];
 
   const ProjDescShort = ProjDesc.slice(0, 2);  //for home page
