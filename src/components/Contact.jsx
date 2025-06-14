@@ -50,7 +50,7 @@ function Contact() {
   ];
   return (
     <>
-      <section id="contact" className=" pt-30 flex py-8 max-lg:flex-col items-center gap-8 lg:px-4 xl:px-8 bg-gray-300 ">
+      <section  className=" pt-30 flex py-8 max-lg:flex-col items-center gap-8 lg:px-4 xl:px-8 bg-gray-300 ">
         <div className="lg:w-[50%] w-full  p-1">
           <h3 className="text-3xl uppercase font-bold ">contact</h3>
           <h5 className="mt-8 text-xl font-bold">Drop Me a Message</h5>
@@ -105,7 +105,7 @@ function Contact() {
           </div>
         </div>
         {/* form */}
-        <div className="lg:w-[50%] w-[96%] ">
+        <div className="lg:w-[50%] w-[96%] " id="contact">
           <form onSubmit={handleSubmit} className="flex flex-col px-7 py-7 max-md:px-4 max-xl:px-5 gap-5 rounded-3xl bg-gray-100 border-1 border-[#a80a27] items-center justify-center">
             <input
               className="w-full h-11 rounded-xl p-4  text-xl border-1 border-[#a80a27] focus:outline-0  bg-gray-100"
