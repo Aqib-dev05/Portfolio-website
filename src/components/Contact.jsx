@@ -92,7 +92,7 @@ function Contact() {
           </div>
         </div>
         {/* form */}
-        <div className="lg:w-[50%] w-full ">
+        <div className="lg:w-[50%] w-[96%] ">
           <form className="flex flex-col px-7 py-7 max-md:px-4 max-xl:px-5 gap-5 rounded-3xl bg-gray-100 border-1 border-[#a80a27] items-center justify-center">
             <input
               className="w-full h-11 rounded-xl p-4  text-xl border-1 border-[#a80a27] focus:outline-0  bg-gray-100"

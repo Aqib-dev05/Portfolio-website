@@ -36,7 +36,7 @@ function About() {
         </div>
       </div>
       <div className="w-full max-lg:pt-22 max-lg:text-center lg:w-[50%] lg:h-[100%] flex flex-col p-2 lg:p-7 ">
-        <h2 className="blen   my-3 text-6xl font-bold font-[cursive] bg-gradient-to-l  from-[#a80a27] to-[#8c0eca] text-transparent w-fit ">
+        <h2 className="blen max-lg:mx-auto  my-3 text-6xl font-bold font-[cursive] bg-gradient-to-l  from-[#a80a27] to-[#8c0eca] text-transparent w-fit ">
           About Me
         </h2>
         <h3 className="mt-6 text-7xl font-[Times] max-lg:text-4xl max-sm:text-3xl max-xl:text-5xl font-bold ">
