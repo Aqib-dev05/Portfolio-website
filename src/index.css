@@ -95,3 +95,7 @@ body {
         transform: translateX(100vw);
     }
 }
+.active{
+    
+   border-bottom: 3px solid #a80a27;
+}

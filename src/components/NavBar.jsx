@@ -1,4 +1,4 @@
-import { Link } from 'react-router';
+import { NavLink } from 'react-router';
 import React from 'react'
 import Button from './Button'
 import Logo from "../assets/logos/logo-dark-transparent.png"
@@ -31,11 +31,11 @@ function NavBar() {
         </div>
 
         <ul className=" hidden xl:flex gap-10 text-[22px]  uppercase font-semibold list-none  " >
-          <li className='mt-1 cursor-pointer hover:text-[#a80a27] transition-all duration-300 ' ><Link to={"/"}  > Home</Link> </li>
-          <li className='mt-1 cursor-pointer hover:text-[#a80a27] transition-all duration-300 ' ><Link to={"/about"} > About</Link> </li>
-          <li className='mt-1 cursor-pointer hover:text-[#a80a27] transition-all duration-300 ' ><Link to={"/portfolio"}  > Portfolio</Link> </li>
-          <li className='mt-1 cursor-pointer hover:text-[#a80a27] transition-all duration-300 ' ><Link to={"/service"} > Services</Link> </li>
-          <li className='mt-1 cursor-pointer hover:text-[#a80a27] transition-all duration-300 ' ><Link to={"/experience"} > Experience</Link> </li>
+          <li className='mt-1 cursor-pointer hover:text-[#a80a27] transition-all duration-300 ' ><NavLink to={"/"}  > Home</NavLink> </li>
+          <li className='mt-1 cursor-pointer hover:text-[#a80a27] transition-all duration-300 ' ><NavLink to={"/about"} > About</NavLink> </li>
+          <li className='mt-1 cursor-pointer hover:text-[#a80a27] transition-all duration-300 ' ><NavLink to={"/portfolio"}  > Portfolio</NavLink> </li>
+          <li className='mt-1 cursor-pointer hover:text-[#a80a27] transition-all duration-300 ' ><NavLink to={"/service"} > Services</NavLink> </li>
+          <li className='mt-1 cursor-pointer hover:text-[#a80a27] transition-all duration-300 ' ><NavLink to={"/experience"} > Experience</NavLink> </li>
           <li className='xl:ml-20'>
             <Button text="Contact"
               onClick={() => {
@@ -59,11 +59,11 @@ function NavBar() {
               <X color="#ffff" size={48} />
             </button> */}
             <ul className="flex flex-col items-center justify-center mt-16 gap-4 text-[22px] uppercase font-medium list-none  " >
-              <li className='mt-1 hover:text-[#a80a27] transition-all duration-300 ' ><Link onClick={() => setIsOpen(false)} to={"/"} > Home</Link> </li>
-              <li className='mt-1 hover:text-[#a80a27] transition-all duration-300 ' ><Link onClick={() => setIsOpen(false)} to={"/about"} > About</Link> </li>
-              <li className='mt-1 hover:text-[#a80a27] transition-all duration-300 ' ><Link onClick={() => setIsOpen(false)} to={"/portfolio"} > Portfolio</Link> </li>
-              <li className='mt-1 hover:text-[#a80a27] transition-all duration-300 ' ><Link onClick={() => setIsOpen(false)} to={"/service"} > Services</Link> </li>
-              <li className='mt-1 hover:text-[#a80a27] transition-all duration-300 ' ><Link onClick={() => setIsOpen(false)} to={"/experience"} > Experience</Link> </li>
+              <li className='mt-1 hover:text-[#a80a27] transition-all duration-300 ' ><NavLink onClick={() => setIsOpen(false)} to={"/"} > Home</NavLink> </li>
+              <li className='mt-1 hover:text-[#a80a27] transition-all duration-300 ' ><NavLink onClick={() => setIsOpen(false)} to={"/about"} > About</NavLink> </li>
+              <li className='mt-1 hover:text-[#a80a27] transition-all duration-300 ' ><NavLink onClick={() => setIsOpen(false)} to={"/portfolio"} > Portfolio</NavLink> </li>
+              <li className='mt-1 hover:text-[#a80a27] transition-all duration-300 ' ><NavLink onClick={() => setIsOpen(false)} to={"/service"} > Services</NavLink> </li>
+              <li className='mt-1 hover:text-[#a80a27] transition-all duration-300 ' ><NavLink onClick={() => setIsOpen(false)} to={"/experience"} > Experience</NavLink> </li>
               <li className='xl:ml-20'>
                 <Button varient='outlined'
                   onClick={() => {
