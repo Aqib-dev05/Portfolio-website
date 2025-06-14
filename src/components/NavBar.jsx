@@ -67,6 +67,7 @@ function NavBar() {
               <li className='xl:ml-20'>
                 <Button varient='outlined'
                   onClick={() => {
+                    setIsOpen(false);
                     const section = document.getElementById("contact");
                     if (section) {
                       section.scrollIntoView({ behavior: "smooth" });
