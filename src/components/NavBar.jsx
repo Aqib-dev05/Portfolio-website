@@ -46,7 +46,7 @@ function NavBar() {
               }} /></li>
         </ul>
 
-        <button onClick={handleOpen} className='bg-white block xl:hidden rounded-[8px]' >
+        <button onClick={handleOpen} className='bg-white z-[999] block xl:hidden rounded-[8px]' >
           <Text size={48} color='#a80b28' strokeWidth={3} />
         </button>
 
