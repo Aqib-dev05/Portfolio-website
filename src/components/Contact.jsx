@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 import Logo from "../assets/logos/logo-dark-transparent.png";
 import Button from "./Button";
+import { Link } from "react-router";
 
 
 function Contact() {
@@ -22,7 +23,7 @@ function Contact() {
 
   useEffect(() => {
     if (state.succeeded) {
-      window.location.reload();
+      window.scrollTo({ top: 0, behavior: "smooth" });
       
     }
   }, [state.succeeded]);
@@ -138,7 +139,7 @@ function Contact() {
       <div className="h-[1px]  bg-gray-400" ></div>
       <footer className="bg-gray-300 flex-wrap flex items-center justify-between py-12 px-15 max-md:px-4 max-lg:px-9 ">
         <div className="flex items-center justify-center gap-2">
-          <img className="w-[180px] max-lg:w-[140px] " src={Logo} alt="aqib" />
+         <Link to={"/"}> <img className="w-[180px] max-lg:w-[140px] " src={Logo} alt="aqib" /></Link>
           <p>
             {"\u00A9"} {year} Protfolio.All rights reserved.{" "}
           </p>

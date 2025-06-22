@@ -22,7 +22,12 @@ function Left() {
             <p className='mt-5 max-sm:text-[20px] text-[22px] max-lg:w-[90%] lg:w-[86%] font-medium text-[rgba(66,65,65,0.61)] '>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, voluptatum consequuntur consequatur laudantium cupiditate possimus aliquid voluptates.</p>
 
             <div className='mt-10 flex max-sm:gap-1 gap-6'>
-                <Button text="Hire Me!" icon={<ArrowRight />} />
+                <Button text="Hire Me!" icon={<ArrowRight />}  onClick={() => {
+                const section = document.getElementById("contact");
+                if (section) {
+                  section.scrollIntoView({ behavior: "smooth" });
+                }
+              }} />
                 <Button text="Download CV" icon={<Download />} varient='shadowed' />
             </div>
             <div className=' mt-18 h-[60px] flex items-center justify-center max-sm:gap-3 gap-6 w-fit '>
