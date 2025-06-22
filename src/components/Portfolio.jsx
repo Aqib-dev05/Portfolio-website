@@ -8,6 +8,7 @@ import Pic from "../assets/Pics/port.png";
 import Tod from "../assets/Pics/tdo.png";
 import Panda from "../assets/Pics/pnda.png";
 import Ecom from "../assets/Pics/ecom.png";
+import Cama from "../assets/Pics/cama.png"
 import Button from "./Button";
 import { Link } from "react-router";
 
@@ -75,7 +76,14 @@ function Portfolio({ isFull }) {
       link: "https://panda-loginnpage.netlify.app/",
       borderColor: "#a80a27",
     },
-
+    {
+      id: 8,
+      title: "Cam Gaurd",
+      description: "a complete functional website of security camera seller agency named camgaurd,build in html,css and javaScript.",
+      image: Cama,
+      link: "https://camgaurdpro2.mystrikingly.com/",
+      borderColor: "#3bf57f",
+    },
   ];
 
   const ProjDescShort = ProjDesc.slice(0, 2);  //for home page
@@ -107,7 +115,7 @@ function Portfolio({ isFull }) {
           ))
         )}
 
-        {isFull ? "": <Link to={"/portfolio"}  ><Button text="View All Projects" /></Link> }
+        {isFull ? "" : <Link to={"/portfolio"}  ><Button text="View All Projects" /></Link>}
       </div>
     </section>
   );
