@@ -8,6 +8,7 @@ import Pic from "../assets/Pics/port.png";
 import Tod from "../assets/Pics/tdo.png";
 import Panda from "../assets/Pics/pnda.png";
 import Ecom from "../assets/Pics/ecom.png";
+import Tms from "../assets/Pics/tms.png"
 import Cama from "../assets/Pics/cama.png"
 import Button from "./Button";
 import { Link } from "react-router";
@@ -16,6 +17,15 @@ function Portfolio({ isFull }) {
   const ProjDesc = [
     {
       id: 1,
+      title: "Task Management System",
+      description:
+        "A full-featured task management system built with React. It allows users to create, update, and delete tasks, organize them by status, and track progress in real-time. The app features a responsive UI, and persistent storage for user data.",
+      image: Tms,
+      link: "https://task-management-system-wheat-five.vercel.app/",
+      borderColor: "#0fac8d",
+    },
+    {
+      id: 2,
       title: "Ecommerce Website",
       description:
         "A UI for Ecommerce electronics store,Build in Html,CSS,javaScript and GSAP animations,Fully responsive design.",
@@ -24,7 +34,7 @@ function Portfolio({ isFull }) {
       borderColor: "#4affff",
     },
     {
-      id: 2,
+      id: 3,
       title: "Resturent Website",
       description:
         "A Resturent site UI created with Html Css and JavaScript. It is a responsive website that showcases the menu, services, and contact information of the restaurant.",
@@ -33,7 +43,7 @@ function Portfolio({ isFull }) {
       borderColor: "#742ab5",
     },
     {
-      id: 3,
+      id: 4,
       title: "Wizard X Clone",
       description:
         "A clone of the Wizard X website, which is a platform for learning web development.Created using Html,CSS,javaScript and GSAP animations. The clone includes features such as course listings,responsive design.",
@@ -42,7 +52,7 @@ function Portfolio({ isFull }) {
       borderColor: "crimson",
     },
     {
-      id: 4,
+      id: 5,
       title: "Weather App",
       description:
         "A weather application built with React that allows users to search for current weather conditions in any city. It fetches data from a weather API and displays temperature, humidity, and other relevant information.",
@@ -51,7 +61,7 @@ function Portfolio({ isFull }) {
       borderColor: "#3bf57f",
     },
     {
-      id: 5,
+      id: 6,
       title: "Tic Tac Toe",
       description:
         "A simple Tic Tac Toe game built with React. It allows two players to play the game on a 3x3 grid, keeping track of the moves and determining the winner.",
@@ -60,7 +70,7 @@ function Portfolio({ isFull }) {
       borderColor: "#0000a8",
     },
     {
-      id: 6,
+      id: 7,
       title: "Todo List App",
       description:
         "A Todo List application built with React that allows users to add, edit, and delete tasks. It provides a simple interface for managing daily tasks and keeping track of completed items.Also keep record of previous tasks in local storage.",
@@ -69,7 +79,7 @@ function Portfolio({ isFull }) {
       borderColor: "#c7d41c",
     },
     {
-      id: 7,
+      id: 8,
       title: "Panda Login Page",
       description: "A Login page made in javaScript,Whole Panda is created using Css ,Dynamic eyes which changes on inputs.",
       image: Panda,
@@ -77,7 +87,7 @@ function Portfolio({ isFull }) {
       borderColor: "#a80a27",
     },
     {
-      id: 8,
+      id: 9,
       title: "Cam Gaurd",
       description: "a complete functional website of security camera seller agency named camgaurd,build in html,css and javaScript.",
       image: Cama,
@@ -94,7 +104,7 @@ function Portfolio({ isFull }) {
       <h2 className=" font-[Dance] border-b-4 border-[#a80a27] text-center text-5xl  font-bold  w-fit mx-auto p-5 ">
         My <span className="bg-gradient-to-l  from-[#a80a27] to-[#8c0eca] text-transparent  blen">Portfolio</span>
       </h2>
-      <div className="lg:w-[80%] mt-10 mx-auto p-5 flex justify-center items-center flex-col gap-6 ">
+      <div className="xl:w-[80%] mt-10 mx-auto p-5 max-sm:p-2 flex justify-center items-center flex-col gap-6 ">
 
         {isFull ? (
           ProjDesc.map((proj, index) => (
