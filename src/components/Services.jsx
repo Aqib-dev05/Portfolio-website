@@ -49,16 +49,16 @@ function Services() {
         {services.map((service) => (
           <div
             key={service.id}
-            className=" service-card transition-all duration-300 flex  w-[310px]  h-[450px] max-sm:h-[auto] max-sm:px-4 max-sm:py-5  bg-[#a80a272a] rounded-2xl  flex-col items-start gap-4 p-5 border-b border-gray-200"
+            className=" service-card transition-all duration-300 flex  w-[310px]  h-[400px] max-sm:h-[auto] max-sm:px-2 max-sm:py-5  bg-[#a80a272a] rounded-2xl  flex-col items-start gap-4 p-3 border-b border-gray-200"
           >
             <div className="flex sr-ico transition-all duration-600 items-center justify-center w-11 h-11 bg-[#a80a27] rounded-full">
               {service.icon}
             </div>
             <div>
-              <h3 className="text-[23px] my-4 font-semibold text-gray-800">
+              <h3 className="text-[23px] my-3 font-semibold text-gray-800">
                 {service.title}
               </h3>
-              <p className="text-gray-600 mt-8 text-[18px] ">
+              <p className="text-gray-600 mt-3 text-[18px] ">
                 {service.description}
               </p>
             </div>

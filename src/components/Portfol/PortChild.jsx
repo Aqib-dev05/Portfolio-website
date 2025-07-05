@@ -4,7 +4,7 @@ import Button from "../Button"
 function PortChild({alignment = "flex-row",borderColor = "aqua",title,description,id,image,link}) {
   return (
     <div className={`w-full  gap-6 py-8 ${alignment} border-gray-400 border-b-[1px]  flex max-lg:flex-col items-center justify-center `} >
-        <div style={{borderColor:borderColor}} className={`lg:w-[50%] overflow-hidden  max-sm:w-[98%] w-[500px]  max-sm:h-[200px] max-md:h-[250px] max-lg:h-[310px] h-[400px]    rounded-2xl max-lg:border-[8px] lg:border-[12px] `} >
+        <div style={{borderColor:borderColor}} className={`lg:w-[50%] overflow-hidden  max-sm:w-[98%] w-[500px]  max-sm:h-[200px] max-md:h-[250px] h-[300px]    rounded-2xl max-lg:border-[8px] lg:border-[12px] `} >
             <img src={image} alt="as" className='object-fill  w-[100%] h-full hover:scale-[1.15] transition-all duration-400 '   />
         </div>
         <div className='lg:w-[50%] w-full flex justify-center items-center lg:block flex-col  '>

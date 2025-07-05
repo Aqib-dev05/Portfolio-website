@@ -25,12 +25,12 @@ function NavBar() {
 
   return (
     <>
-      <nav className="w-full z-50 h-[100px] bg-white shadow-md shadow-[#dad] flex items-center justify-between 2xl:px-24 xl:px-3 lg:px-16 max-md:px-4 max-lg:px-20  " >
+      <nav className="w-full z-50 h-[100px] bg-white shadow-md shadow-[#dad] flex items-center justify-between 2xl:px-24 xl:px-5 lg:px-16 max-md:px-4 max-lg:px-20  " >
         <div className="flex h-full  items-center justify-center">
           <img src={Logo} className=" w-[160px] max-sm:w-[100px] object-cover " alt="ogo" />
         </div>
 
-        <ul className=" hidden xl:flex gap-10 text-[22px]  uppercase font-semibold list-none  " >
+        <ul className=" hidden xl:flex gap-8  text-[20px]  uppercase font-semibold list-none  " >
           <li className='mt-1 cursor-pointer hover:text-[#a80a27] transition-all duration-300 ' ><NavLink to={"/"}  > Home</NavLink> </li>
           <li className='mt-1 cursor-pointer hover:text-[#a80a27] transition-all duration-300 ' ><NavLink to={"/about"} > About</NavLink> </li>
           <li className='mt-1 cursor-pointer hover:text-[#a80a27] transition-all duration-300 ' ><NavLink to={"/portfolio"}  > Portfolio</NavLink> </li>

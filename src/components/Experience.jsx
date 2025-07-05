@@ -144,11 +144,11 @@ function Experience({ isFull }) {
             A comprehensive overview of my technical skills and experience
             across various technologies and frameworks.
           </p>
-          <div className="flex flex-wrap items-center justify-center gap-16  mx-auto mt-20">
+          <div className="flex flex-wrap items-center justify-center gap-14  mx-auto mt-20">
             {ExperienceInfo.map((elem, idx) => (
               <div
                 key={elem.id + idx}
-                className="bg-red-50 exp-card h-[300px] max-sm:h-[320px] w-[510px] xl:w-[600px] max-sm:w-[96%] p-5  rounded-xl  transition-all duration-300 box-border  "
+                className="bg-red-50 exp-card h-[290px] max-sm:h-[320px] w-[510px] xl:w-[550px] max-sm:w-[96%]  p-5  rounded-xl  transition-all duration-300 box-border  "
               >
                 <div className="flex gap-6  items-center ">
                   <div className=" bg-white abc p-2 rounded-lg   w-[60px] h-[60px] flex items-center justify-center ">
@@ -190,6 +190,7 @@ function Experience({ isFull }) {
             ))}
           </div>
         </section>
+      
       </>
     );
   }
