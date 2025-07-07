@@ -2,11 +2,11 @@ import React from "react";
 import Cartoon from "../assets/Pics/3542.jpg";
 import Button from "./Button";
 import { Link } from "react-router";
-
+import { motion } from "motion/react";
 function About() {
   return (
-    <section className="w-full lg:min-h-[80vh] pb-5  pt-20 bg-gray-300 flex max-lg:flex-col max-lg:items-center max-lg:justify-center  ">
-      <div className="left  lg:w-[50%] lg:min-h-[100%] flex items-center justify-center  ">
+    <motion.section whileInView={"visible"} viewport={{ once: true, amount: .3 }} className="w-full lg:min-h-[80vh] pb-5  pt-20 bg-gray-300 flex max-lg:flex-col max-lg:items-center max-lg:justify-center  ">
+      <div className="left  lg:w-[40%] lg:min-h-[100%] flex items-center justify-center  ">
         <div
           className="p-2 "
           style={{
@@ -35,7 +35,7 @@ function About() {
           ></div>
         </div>
       </div>
-      <div className="w-full max-lg:pt-22 max-lg:text-center lg:w-[50%] lg:h-[100%] flex flex-col p-2 lg:p-5 ">
+      <div className="w-full max-lg:pt-22 max-lg:text-center lg:w-[60%] lg:h-[100%] flex flex-col p-2 lg:p-5 ">
         <h2 className="blen max-lg:mx-auto  my-3 text-6xl font-bold font-[cursive] bg-gradient-to-l  from-[#a80a27] to-[#8c0eca] text-transparent w-fit ">
           About Me
         </h2>
@@ -61,7 +61,7 @@ function About() {
           </Link>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
 
