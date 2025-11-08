@@ -7,9 +7,9 @@ function Right() {
 
   useEffect(() => {
     if (text.current) {
-      const content = 'I\'m Frontend React Developer and Learning Backend';
+      const content = 'I\'m a Full Stack MERN Developer ';
       text.current.innerHTML = content.split('').map((char, index) => {
-        return `<span className="roti" style="position: absolute; transform-origin: 0 ${(window.innerWidth >= 10 && window.innerWidth < 640) ? '175px' : (window.innerWidth >= 640 && window.innerWidth < 1280) ? '246px' : '280px'}; transform: rotate(${index * 7}deg)">${char}</span>`;
+        return `<span className="roti" style="position: absolute; transform-origin: 0 ${(window.innerWidth >= 10 && window.innerWidth < 640) ? '175px' : (window.innerWidth >= 640 && window.innerWidth < 1280) ? '246px' : '280px'}; transform: rotate(${index * 10}deg)">${char}</span>`;
       }).join('');
     }
   },);
@@ -48,7 +48,7 @@ function Right() {
                     width: '100%',
                     textAlign: 'center'
                   }}>
-                  I'm Frontend React Developer and Learning Backend
+               Full Stack MERN Developer
                 </p>
               </div>
             </div>

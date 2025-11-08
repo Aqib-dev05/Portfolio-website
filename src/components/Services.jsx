@@ -1,5 +1,5 @@
 import React from "react";
-import { motion, stagger } from "motion/react";
+import { motion } from "motion/react";
 import { Code, Layout, Globe, Search, ChevronRight } from "lucide-react";
 
 function Services() {
@@ -34,21 +34,29 @@ function Services() {
     },
   ];
 
-  const container = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.2,
+   const containeVarient={
+    hidden:{ opacity:0},
+    visible:{
+      opacity:1,
+      transition:{
+        staggerChildren:0.2,
       }
     }
-  }
+   }
 
-  const item = {
-    hidden: { y: 26, opacity: 0 },
-    visible: { y: 0, opacity: 1, transition: { type: "spring", stiffness: 100, damping: 10 } },
+   const cardVarient={
+    hidden:{ y:20,opacity:0},
+    visible:{
+      y:0,
+      opacity:1,
+      transition:{
+        type:"spring",
+        stiffness:100,
+        damping:10,
+      }
+    }
+   }
 
-  }
 
   return (
     <section className="w-full py-10">
@@ -62,10 +70,10 @@ function Services() {
         We deliver high-quality digital solutions crafted to meet your specific
         needs and exceed expectations.
       </motion.p>
-      <motion.div variants={container} initial="hidden" whileInView={"visible"} viewport={{ once: true, amount: .2 }} className="w-full xl:w-[85%] mx-auto md:p-6 p-2  rounded-lg  flex flex-wrap justify-center items-center gap-8">
+      <motion.div variants={containeVarient} initial="hidden" whileInView="visible" viewport={{once:true,amount:0.2}}   className="w-full xl:w-[85%] mx-auto md:p-6 p-2  rounded-lg  flex flex-wrap justify-center items-center gap-8">
         {services.map((service, idx) => (
           <motion.div
-            variants={item}
+            variants={cardVarient}
             key={idx}
             className=" service-card transition-all duration-300 flex  w-[310px]  h-[400px] max-sm:h-[auto] max-sm:px-2 max-sm:py-5  bg-[#a80a272a] rounded-2xl  flex-col items-start gap-4 p-3 border-b border-gray-200"
           >

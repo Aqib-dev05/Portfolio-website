@@ -14,12 +14,13 @@ function Left() {
         { icon: <Linkedin strokeWidth={2} size={30} />, link: "https://linkedin.com/in/aqib-ali-37a6a3357" }
     ];
     return (
-
         <div className="  lg:w-[55%] w-full max-lg:h-full pt-35 lg:pl-6 xl:pl-10  flex flex-col max-lg:justify-center max-lg:items-center ">
             <p className='uppercase max-sm:text-[16px] text-2xl  text-[rgba(66,65,65,0.61)] '>Welcome To My World</p>
             <motion.h1 initial={{y:-24,opacity:0}} animate={{y:0,opacity:1}} transition={{duration:0.3,type:"spring", damping:70}} className='font-bold max-sm:text-4xl  text-7xl ' >Hi I'm  Aqib Ali </motion.h1>
-            <motion.h2 initial={{y:18,opacity:0}} animate={{y:0,opacity:1}} transition={{duration:0.3,type:"spring", damping:70}} className=' max-sm:text-2xl pb-2 font-[Tan]  text-4xl mt-5  bg-gradient-to-l  from-[#a80a27] to-[#8c0eca] text-transparent w-fit blen  ' >Frontend Developer </motion.h2>
-            <p className='mt-5 max-sm:text-[20px] text-[22px] max-lg:w-[90%] lg:w-[86%] font-medium text-[rgba(66,65,65,0.61)] '>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, voluptatum consequuntur consequatur laudantium cupiditate possimus aliquid voluptates.</p>
+            <motion.h2 initial={{y:18,opacity:0}} animate={{y:0,opacity:1}} transition={{duration:0.3,type:"spring", damping:70}} className=' max-sm:text-2xl pb-2 font-[Tan]  text-4xl mt-5  bg-gradient-to-l  from-[#a80a27] to-[#8c0eca] text-transparent w-fit blen  ' >Full Stack Developer </motion.h2>
+            <p className='mt-5 max-sm:text-[20px] text-[22px] max-lg:w-[90%] lg:w-[86%] font-medium text-[rgba(66,65,65,0.61)] '>
+                Passionate full-stack developer specializing in MERN stack. Creating seamless web applications with modern frontend frameworks and robust backend solutions. Turning innovative ideas into efficient, scalable code.
+            </p>
 
             <div className='mt-10 flex max-sm:gap-1 gap-6'>
                 <Button text="Hire Me!" icon={<ArrowRight />}  onClick={() => {
@@ -35,13 +36,9 @@ function Left() {
                     socialLinks.map((item, index) => (
                         <IconCircle key={index} icon={item.icon} url={item.link} />
                     ))
-
                 }
-
             </div>
-
         </div>
-
     )
 }
 
