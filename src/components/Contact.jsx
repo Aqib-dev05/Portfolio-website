@@ -84,10 +84,10 @@ function Contact() {
               <a
                 className="hover:text-[#a80a27] hover:translate-x-2 transition-all duration-300 "
                 target="_blank"
-                href="mailto:aqibgithub@gmail.com"
+                href="mailto:m.aqibali3040@gmail.com"
               >
                 {" "}
-                aqibgithub@gmail.com{" "}
+                m.aqibali3040@gmail.com{" "}
               </a>
             </div>
             <div className="flex gap-3 items-center">

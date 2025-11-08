@@ -9,13 +9,13 @@ function Right() {
     if (text.current) {
       const content = 'I\'m a Full Stack MERN Developer ';
       text.current.innerHTML = content.split('').map((char, index) => {
-        return `<span className="roti" style="position: absolute; transform-origin: 0 ${(window.innerWidth >= 10 && window.innerWidth < 640) ? '175px' : (window.innerWidth >= 640 && window.innerWidth < 1280) ? '246px' : '280px'}; transform: rotate(${index * 10}deg)">${char}</span>`;
+        return `<span className="roti" style="position: absolute; transform-origin: 0 ${(window.innerWidth >= 10 && window.innerWidth < 640) ? '175px' : (window.innerWidth >= 640 && window.innerWidth < 1280) ? '246px' : '280px'}; transform: rotate(${index * 11}deg)">${char}</span>`;
       }).join('');
     }
   },);
 
   return (
-    <motion.div initial={{y:26,opacity:0}} animate={{y:0,opacity:1}} transition={{type:"spring", stiffness:100,damping:60}} className="lg:w-[45%] w-full p-3 overflow-hidden flex items-center justify-center">
+    <motion.div initial={{ y: 26, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ type: "spring", stiffness: 100, damping: 60 }} className="lg:w-[45%] w-full p-3 overflow-hidden flex items-center justify-center">
       <div className="p-5 max-sm:p-2" style={{
         // background: 'linear-gradient(to bottom, #a80a27, #6a058e)',
         borderRadius: '50%',
@@ -48,7 +48,7 @@ function Right() {
                     width: '100%',
                     textAlign: 'center'
                   }}>
-               Full Stack MERN Developer
+                  Full Stack MERN Developer
                 </p>
               </div>
             </div>

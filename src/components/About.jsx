@@ -40,20 +40,21 @@ function About() {
           About Me
         </h2>
         <h3 className="mt-6 text-7xl font-[Times] max-lg:text-4xl max-sm:text-3xl max-xl:text-5xl font-bold ">
-          1.1 Year's Experience in Web Development
+          1.5 Year's Experience in Web Development
         </h3>
         <p className="mt-6 text-xl w-[95%] font-medium text-gray-800">
-          I'm Aqib ALi, a frontend developer passionate about creating clean,
-          responsive, and engaging web experiences. I specialize in React,
-          JavaScript, HTML, and CSS, and I’m currently leveling up with Tailwind
-          CSS, Jest, and API integrations.
+          I'm Aqib Ali, a MERN stack developer focused on building end-to-end web
+          applications using MongoDB, Express, React, and Node.js. I create scalable
+          backends and polished frontends — from designing RESTful APIs and database
+          schemas to crafting responsive React interfaces and managing client-side
+          state.
           <br /><br />
-          I enjoy building UIs that not only look good but work smoothly and
-          efficiently. Beyond development, I’m also exploring SEO and how
-          websites can help businesses grow online. I’m always eager to learn,
-          take on new challenges, and bring creative ideas to life through code.
+          I prioritize clean, maintainable code, secure authentication flows,
+          performance optimization, and automated testing (Jest).
+          Always learning, I enjoy solving real user problems with
+          pragmatic, well-architected solutions.
           <br /><br />
-          Let’s create something impactful together!
+          Let’s build reliable, high-quality web experiences together.
         </p>
         <div className="flex gap-4 mt-8 w-full max-lg:justify-center">
           <Link to={"/experience"} >
