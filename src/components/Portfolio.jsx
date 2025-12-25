@@ -9,6 +9,9 @@ import Tod from "../assets/Pics/tdo.png";
 import Panda from "../assets/Pics/pnda.png";
 import Ecom from "../assets/Pics/ecom.png";
 import Tms from "../assets/Pics/tms.png"
+import ManaPic from "../assets/Pics/mana.png"
+import JobSeekPic from "../assets/Pics/jobseek.png"
+import Tms2 from "../assets/Pics/tmss.png"
 import Cama from "../assets/Pics/cama.png"
 import Button from "./Button";
 import { Link } from "react-router";
@@ -19,13 +22,31 @@ function Portfolio({ isFull }) {
       id: 1,
       title: "Task Management System",
       description:
-        "A full-featured task management system built with React. It allows users to create, update, and delete tasks, organize them by status, and track progress in real-time. The app features a responsive UI, and persistent storage for user data.",
-      image: Tms,
-      link: "https://task-management-system-wheat-five.vercel.app/",
+        "A full-featured task management system built with MERN. It allows users to create, update, and delete tasks, organize them by status, and track progress in real-time. The app features a responsive UI, and persistent storage for user data.",
+      image: Tms2,
+      link: "https://tms-frontend-amber.vercel.app",
       borderColor: "#0fac8d",
     },
     {
       id: 2,
+      title: "Job Seek Application",
+      description:
+        "A comprehensive job-seeking application built using the MERN stack. It enables users to search and apply for jobs, create profiles, and manage applications. The platform includes features such as job listings, filtering options, and real-time notifications.",
+      image: JobSeekPic,
+      link: "https://job-seeker-front.vercel.app",
+      borderColor: "#a76fc0",
+    },
+     {
+      id: 3,
+      title: "A Graphics Designer Portfolio",
+      description:
+        "A portfolio website for a graphics designer showcasing their work, skills, and services. Built with HTML, CSS, and JavaScript, the site features a responsive design, interactive elements, and a gallery of design projects.",
+      image: ManaPic,
+      link: "https://abdulrehman-gd.vercel.app/",
+      borderColor: "#ff5733",
+    },
+    {
+      id: 4,
       title: "Ecommerce Website",
       description:
         "A UI for Ecommerce electronics store,Build in Html,CSS,javaScript and GSAP animations,Fully responsive design.",
@@ -34,7 +55,7 @@ function Portfolio({ isFull }) {
       borderColor: "#4affff",
     },
     {
-      id: 3,
+      id: 5,
       title: "Resturent Website",
       description:
         "A Resturent site UI created with Html Css and JavaScript. It is a responsive website that showcases the menu, services, and contact information of the restaurant.",
@@ -43,7 +64,7 @@ function Portfolio({ isFull }) {
       borderColor: "#742ab5",
     },
     {
-      id: 4,
+      id: 6,
       title: "Wizard X Clone",
       description:
         "A clone of the Wizard X website, which is a platform for learning web development.Created using Html,CSS,javaScript and GSAP animations. The clone includes features such as course listings,responsive design.",
@@ -52,7 +73,7 @@ function Portfolio({ isFull }) {
       borderColor: "crimson",
     },
     {
-      id: 5,
+      id: 7,
       title: "Weather App",
       description:
         "A weather application built with React that allows users to search for current weather conditions in any city. It fetches data from a weather API and displays temperature, humidity, and other relevant information.",
@@ -61,7 +82,7 @@ function Portfolio({ isFull }) {
       borderColor: "#3bf57f",
     },
     {
-      id: 6,
+      id: 8,
       title: "Tic Tac Toe",
       description:
         "A simple Tic Tac Toe game built with React. It allows two players to play the game on a 3x3 grid, keeping track of the moves and determining the winner.",
@@ -70,7 +91,7 @@ function Portfolio({ isFull }) {
       borderColor: "#0000a8",
     },
     {
-      id: 7,
+      id: 9,
       title: "Todo List App",
       description:
         "A Todo List application built with React that allows users to add, edit, and delete tasks. It provides a simple interface for managing daily tasks and keeping track of completed items.Also keep record of previous tasks in local storage.",
@@ -79,15 +100,7 @@ function Portfolio({ isFull }) {
       borderColor: "#c7d41c",
     },
     {
-      id: 8,
-      title: "Panda Login Page",
-      description: "A Login page made in javaScript,Whole Panda is created using Css ,Dynamic eyes which changes on inputs.",
-      image: Panda,
-      link: "https://panda-loginnpage.netlify.app/",
-      borderColor: "#a80a27",
-    },
-    {
-      id: 9,
+      id: 10,
       title: "Cam Gaurd",
       description: "a complete functional website of security camera seller agency named camgaurd,build in html,css and javaScript.",
       image: Cama,

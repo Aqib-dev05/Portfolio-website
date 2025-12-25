@@ -40,7 +40,7 @@ function About() {
           About Me
         </h2>
         <h3 className="mt-6 text-7xl font-[Times] max-lg:text-4xl max-sm:text-3xl max-xl:text-5xl font-bold ">
-          1.5 Year's Experience in Web Development
+        2 Year's Experience in Web Development
         </h3>
         <p className="mt-6 text-xl w-[95%] font-medium text-gray-800">
           I'm Aqib Ali, a MERN stack developer focused on building end-to-end web
