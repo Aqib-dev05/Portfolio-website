@@ -13,7 +13,7 @@ function Services() {
     },
     {
       id: 2,
-      title: "Website Development",
+      title: "Full-Stack Web Development",
       description:
         "Building dynamic websites tailored for businesses and individuals. From static pages to fully interactive platforms, optimized for speed and mobile performance.",
       icon: <Globe className="w-6 h-6 text-white zzz" />,

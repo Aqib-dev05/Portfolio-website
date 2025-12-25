@@ -7,29 +7,41 @@ import Bo from "../assets/Pics/BubbleLogo.png";
 import Tail from "../assets/Pics/TailwindCssLogo.png";
 import Anime from "../assets/Pics/AnimeJsLogo.png";
 import Gs from "../assets/Pics/gsap.png";
+import MySq from "../assets/Pics/mysql.png";
+import Mong from "../assets/Pics/mongodb-logo.png";
+import Expres from "../assets/Pics/express-js.webp"
 
 function Experience({ isFull }) {
   const ExperienceInfo = [
-    {
+      {
       id: 1,
-      name: "HTML5",
-      image: Html,
-      level: "Expert",
-      exp: 5,
-      desc: "Strong foundation in semantic HTML5 with a focus on accessibility and SEO best practices. Created well-structured, accessible web pages following modern standards.",
-      proficiency: "95%",
+      name: "MongoDB",
+      image: Mong,
+      level: "Intermediate",
+      exp: 1,
+      desc: "Experience with MongoDB for building NoSQL databases. Familiar with data modeling, CRUD operations, and aggregation framework.",
+      proficiency: "70%",
     },
     {
       id: 2,
-      name: "CSS3",
-      image: Css,
-      level: "Expert",
-      exp: 2,
-      desc: "Advanced knowledge of CSS3 including Flexbox, Grid, animations, and responsive design. Created complex layouts and interactive UI components with pure CSS.",
-      proficiency: "92%",
+      name: "MySQL",
+      image: MySq,
+      level: "Intermediate",
+      exp: 1,
+      desc: "Experience with MySQL for building relational databases. Familiar with database design, SQL queries, and performance optimization.",
+      proficiency: "70%",
     },
     {
       id: 3,
+      name: 'Express JS',
+      image: Expres,
+      level: 'Intermediate',
+      exp: 1,
+      desc: 'Experience building backend applications using Express.js. Knowledgeable in routing, middleware, and RESTful API development.',
+      proficiency: '70%',
+    },
+    {
+      id: 4,
       name: "Tailwind CSS",
       image: Tail,
       level: "Expert",
@@ -38,7 +50,7 @@ function Experience({ isFull }) {
       proficiency: "90%",
     },
     {
-      id: 4,
+      id: 5,
       name: "React JS",
       image: Reac,
       level: "Expert",
@@ -46,16 +58,7 @@ function Experience({ isFull }) {
       desc: "Extensive experience building modern web applications with React. Proficient with hooks, context API, Redux, Redux Toolkit and various React libraries.",
       proficiency: "85%",
     },
-    {
-      id: 5,
-      name: "JavaScript",
-      image: Js,
-      level: "Expert",
-      exp: 2,
-      desc: "Deep understanding of JavaScript including ES6+ features, asynchronous programming, DOM manipulation, and modern JS frameworks.",
-      proficiency: "90%",
-    },
-    {
+      {
       id: 6,
       name: "GSAP",
       image: Gs,
@@ -66,22 +69,43 @@ function Experience({ isFull }) {
     },
     {
       id: 7,
-      name: "Anime JS",
-      image: Anime,
-      level: "Intermediate",
-      exp: 2,
-      desc: "Implemented lightweight animations using Anime.js to enhance UI/UX in React applications. Created timeline and scroll-based animations.",
-      proficiency: "50%",
+      name: "HTML5",
+      image: Html,
+      level: "Expert",
+      exp: 5,
+      desc: "Strong foundation in semantic HTML5 with a focus on accessibility and SEO best practices. Created well-structured, accessible web pages following modern standards.",
+      proficiency: "95%",
     },
     {
       id: 8,
-      name: "Bubble.io ",
-      image: Bo,
-      level: "Intermediate",
+      name: "CSS3",
+      image: Css,
+      level: "Expert",
       exp: 2,
-      desc: "Built no-code web apps with Bubble.io including dynamic data-driven pages, workflows, and integrations. Rapidly prototyped MVPs with minimal code.",
-      proficiency: "45%",
+      desc: "Advanced knowledge of CSS3 including Flexbox, Grid, animations, and responsive design. Created complex layouts and interactive UI components with pure CSS.",
+      proficiency: "92%",
     },
+    {
+      id: 5,
+      name: "JavaScript",
+      image: Js,
+      level: "Expert",
+      exp: 2,
+      desc: "Deep understanding of JavaScript including ES6+ features, asynchronous programming, DOM manipulation, and modern JS frameworks.",
+      proficiency: "90%",
+    },
+  
+  
+    {
+      id: 10,
+      name: "Anime.js",
+      image: Anime,
+      level: "Intermediate",
+      exp: 1,
+      desc: "Proficient in creating engaging web animations using Anime.js. Experienced in animating DOM elements, SVGs, and integrating animations into web projects.",
+      proficiency: "75%",
+    }
+ 
   ];
 
   const Doubled = [...ExperienceInfo, ...ExperienceInfo];
