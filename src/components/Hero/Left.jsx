@@ -29,7 +29,7 @@ function Left() {
                   section.scrollIntoView({ behavior: "smooth" });
                 }
               }} />
-                <a download href={"Aqib Ali1 - Resume.pdf"}><Button text="Download CV" icon={<Download />} varient='shadowed' /></a>
+                <a download href={"Aqib Ali - Resume.pdf"}><Button text="Download CV" icon={<Download />} varient='shadowed' /></a>
             </div>
             <div className=' mt-18 h-[60px] flex items-center justify-center max-sm:gap-3 gap-6 w-fit '>
                 {
