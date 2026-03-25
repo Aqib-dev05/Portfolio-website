@@ -1,5 +1,35 @@
 @import "tailwindcss";
 
+:root {
+    --bg-primary: #d1d5db;
+    --bg-secondary: #e5e7eb;
+    --surface-elevated: #ffffff;
+    --surface-soft: #f3f4f6;
+    --text-primary: #000000;
+    --text-muted: #1f2937;
+    --border-color: #d1d5db;
+    --mobile-menu-bg: #2c0a10;
+    --mobile-menu-text: #ffffff;
+    --shadow-soft: rgba(208, 186, 208, 0.85);
+    --experience-card-bg: #fef2f2;
+    --font-primary: "Inter", "Poppins", sans-serif;
+    --font-navbar: "Sora", "Roboto", sans-serif;
+}
+
+[data-theme="dark"] {
+    --bg-primary: #0f1117;
+    --bg-secondary: #171a23;
+    --surface-elevated: #1d212c;
+    --surface-soft: #1a1f29;
+    --text-primary: #f3f4f6;
+    --text-muted: #c5ccd8;
+    --border-color: #374151;
+    --mobile-menu-bg: #121620;
+    --mobile-menu-text: #f3f4f6;
+    --shadow-soft: rgba(0, 0, 0, 0.35);
+    --experience-card-bg: #1a1f29;
+}
+
 @font-face {
     font-family: Roboto;
     src: url("/src/assets/fonts/Roboto-Regular.ttf");
@@ -45,7 +75,10 @@
 
 body {
     overflow-x: hidden;
-    font-family: 'Poppins';
+    font-family: var(--font-primary);
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    transition: background-color 250ms ease, color 250ms ease;
 }
 
 .service-card:hover {

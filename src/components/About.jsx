@@ -1,11 +1,11 @@
 import React from "react";
-import Cartoon from "../assets/Pics/3542.jpg";
+import Cartoon from "../assets/Pics/Me/myPicAiYellow.jpeg";
 import Button from "./Button";
 import { Link } from "react-router";
-import { motion } from "motion/react";
+import { motion as Motion } from "motion/react";
 function About() {
   return (
-    <motion.section whileInView={"visible"} viewport={{ once: true, amount: .3 }} className="w-full lg:min-h-[80vh] pb-5  pt-20 bg-gray-300 flex max-lg:flex-col max-lg:items-center max-lg:justify-center  ">
+    <Motion.section whileInView={"visible"} viewport={{ once: true, amount: .3 }} className="w-full lg:min-h-[80vh] pb-5  pt-20 bg-[var(--bg-primary)] text-[var(--text-primary)] flex max-lg:flex-col max-lg:items-center max-lg:justify-center  ">
       <div className="left  lg:w-[40%] lg:min-h-[100%] flex items-center justify-center  ">
         <div
           className="p-2 "
@@ -31,7 +31,7 @@ function About() {
               backgroundPosition: "center",
               backgroundSize: "cover",
             }}
-            className="bg-white max-sm:w-[300px] max-sm:h-[300px]  w-[400px] h-[400px]  rounded-[50%]"
+            className="bg-[var(--surface-elevated)] max-sm:w-[300px] max-sm:h-[300px]  w-[400px] h-[400px]  rounded-[50%]"
           ></div>
         </div>
       </div>
@@ -42,7 +42,7 @@ function About() {
         <h3 className="mt-6 text-7xl font-[Times] max-lg:text-4xl max-sm:text-3xl max-xl:text-5xl font-bold ">
         2 Year's Experience in Web Development
         </h3>
-        <p className="mt-6 text-xl w-[95%] font-medium text-gray-800">
+        <p className="mt-6 text-xl w-[95%] font-medium text-[var(--text-muted)]">
           I'm Aqib Ali, a MERN stack developer focused on building end-to-end web
           applications using MongoDB, Express, React, and Node.js. I create scalable
           backends and polished frontends — from designing RESTful APIs and database
@@ -62,7 +62,7 @@ function About() {
           </Link>
         </div>
       </div>
-    </motion.section>
+    </Motion.section>
   );
 }
 

@@ -52,18 +52,18 @@ function Contact() {
   ];
   return (
     <>
-      <section id="contact"  className=" pt-30 flex py-8 max-lg:flex-col items-center gap-8 lg:px-4 xl:px-8 bg-gray-300 ">
+      <section id="contact"  className=" pt-30 flex py-8 max-lg:flex-col items-center gap-8 lg:px-4 xl:px-8 bg-[var(--bg-primary)] text-[var(--text-primary)] ">
         <div className="lg:w-[50%] w-full  p-1">
           <h3 className="text-3xl uppercase font-bold ">contact</h3>
           <h5 className="mt-8 text-xl font-bold">Drop Me a Message</h5>
-          <p className="pb-6 mt-4">
+          <p className="pb-6 mt-4 text-[var(--text-muted)]">
             If you have any questions or want to work together, feel free to
             contact me. I'll get back to you as soon as possible.
           </p>
 
           <div className=" flex flex-col  gap-6">
             <div className="flex mt-6 gap-3  items-center">
-              <div className="bg-white hover:text-white hover:bg-[#a80a27] transition-all duration-300 text-[#a80a27] flex items-center justify-center w-[44px] h-[44px] rounded-[50%] ">
+              <div className="bg-[var(--surface-elevated)] hover:text-white hover:bg-[#a80a27] transition-all duration-300 text-[#a80a27] flex items-center justify-center w-[44px] h-[44px] rounded-[50%] ">
                 <Phone />
               </div>
 
@@ -77,7 +77,7 @@ function Contact() {
               </a>
             </div>
             <div className="flex gap-3 items-center">
-              <div className="bg-white hover:text-white hover:bg-[#a80a27] transition-all duration-300 text-[#a80a27] flex items-center justify-center w-[44px] h-[44px] rounded-[50%] ">
+              <div className="bg-[var(--surface-elevated)] hover:text-white hover:bg-[#a80a27] transition-all duration-300 text-[#a80a27] flex items-center justify-center w-[44px] h-[44px] rounded-[50%] ">
                 <Mail />
               </div>
 
@@ -91,7 +91,7 @@ function Contact() {
               </a>
             </div>
             <div className="flex gap-3 items-center">
-              <div className="bg-white hover:text-white hover:bg-[#a80a27] transition-all duration-300 text-[#a80a27] flex items-center justify-center w-[44px] h-[44px] rounded-[50%] ">
+              <div className="bg-[var(--surface-elevated)] hover:text-white hover:bg-[#a80a27] transition-all duration-300 text-[#a80a27] flex items-center justify-center w-[44px] h-[44px] rounded-[50%] ">
                 <MapPin />
               </div>
 
@@ -108,9 +108,9 @@ function Contact() {
         </div>
         {/* form */}
         <div className="lg:w-[50%] w-[96%] " >
-          <form onSubmit={handleSubmit} className="flex flex-col px-7 py-7 max-md:px-4 max-xl:px-5 gap-5 rounded-3xl bg-gray-100 border-1 border-[#a80a27] items-center justify-center">
+          <form onSubmit={handleSubmit} className="flex flex-col px-7 py-7 max-md:px-4 max-xl:px-5 gap-5 rounded-3xl bg-[var(--surface-soft)] border-1 border-[#a80a27] items-center justify-center">
             <input
-              className="w-full h-11 rounded-xl p-4  text-xl border-1 border-[#a80a27] focus:outline-0  bg-gray-100"
+              className="w-full h-11 rounded-xl p-4 text-xl border-1 border-[#a80a27] focus:outline-0 bg-[var(--surface-elevated)]"
               type="text"
               name="name"
               placeholder="Name"
@@ -118,14 +118,14 @@ function Contact() {
               
             />
             <input
-              className="w-full h-11 rounded-xl p-4  text-xl border-1 border-[#a80a27] focus:outline-0  bg-gray-100"
+              className="w-full h-11 rounded-xl p-4 text-xl border-1 border-[#a80a27] focus:outline-0 bg-[var(--surface-elevated)]"
               type="email"
               name="email"
               placeholder="Email"
               required
             />
             <textarea
-              className="w-full h-30 rounded-xl p-4  text-xl border-1 border-[#a80a27] focus:outline-0  bg-gray-100"
+              className="w-full h-30 rounded-xl p-4 text-xl border-1 border-[#a80a27] focus:outline-0 bg-[var(--surface-elevated)]"
               name="message"
               placeholder="Message"
               required
@@ -136,8 +136,8 @@ function Contact() {
           </form>
         </div>
       </section>
-      <div className="h-[1px]  bg-gray-400" ></div>
-      <footer className="bg-gray-300 flex-wrap flex items-center justify-between py-12 px-15 max-md:px-4 max-lg:px-9 ">
+      <div className="h-[1px] bg-[var(--border-color)]" ></div>
+      <footer className="bg-[var(--bg-primary)] text-[var(--text-primary)] flex-wrap flex items-center justify-between py-12 px-15 max-md:px-4 max-lg:px-9 ">
         <div className="flex items-center justify-center gap-2">
          <Link to={"/"}> <img className="w-[180px] max-lg:w-[140px] " src={Logo} alt="aqib" /></Link>
           <p>

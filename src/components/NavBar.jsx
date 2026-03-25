@@ -2,10 +2,10 @@ import { NavLink } from 'react-router';
 import React from 'react'
 import Button from './Button'
 import Logo from "../assets/logos/logo-dark-transparent.png"
-import { Text } from "lucide-react";
+import { Moon, Sun, Text } from "lucide-react";
 import { useState, useEffect } from 'react';
 
-function NavBar() {
+function NavBar({ theme, toggleTheme }) {
 
   const [isOpen, setIsOpen] = useState(false);
   const handleOpen = () => {
@@ -25,12 +25,12 @@ function NavBar() {
 
   return (
     <>
-      <nav className="w-full z-50 h-[100px] bg-white shadow-md shadow-[#dad] flex items-center justify-between 2xl:px-24 xl:px-5 lg:px-16 max-md:px-4 max-lg:px-20  " >
+      <nav className="w-full z-50 h-[100px] bg-[var(--surface-elevated)] text-[var(--text-primary)] shadow-[var(--shadow-soft)] flex items-center justify-between 2xl:px-24 xl:px-5 lg:px-16 max-md:px-4 max-lg:px-20  " style={{ fontFamily: "var(--font-navbar)" }} >
         <div className="flex h-full  items-center justify-center">
           <img src={Logo} className=" w-[160px] max-sm:w-[100px] object-cover " alt="ogo" />
         </div>
 
-        <ul className=" hidden xl:flex gap-8  text-[20px]  uppercase font-semibold list-none  " >
+        <ul className=" hidden xl:flex gap-8  text-[20px]  uppercase font-semibold list-none  " style={{ fontFamily: "Inter, sans-serif" }} >
           <li className='mt-1 cursor-pointer hover:text-[#a80a27] transition-all duration-300 ' ><NavLink to={"/"}  > Home</NavLink> </li>
           <li className='mt-1 cursor-pointer hover:text-[#a80a27] transition-all duration-300 ' ><NavLink to={"/about"} > About</NavLink> </li>
           <li className='mt-1 cursor-pointer hover:text-[#a80a27] transition-all duration-300 ' ><NavLink to={"/portfolio"}  > Portfolio</NavLink> </li>
@@ -44,16 +44,34 @@ function NavBar() {
                   section.scrollIntoView({ behavior: "smooth" });
                 }
               }} /></li>
+          <li>
+            <button
+              onClick={toggleTheme}
+              aria-label="Toggle theme"
+              className="w-[46px] cursor-pointer h-[46px] rounded-[8px] border border-[var(--border-color)] flex items-center justify-center hover:border-[#a80a27] transition-all duration-300"
+            >
+              {theme === "dark" ? <Sun size={22} /> : <Moon size={22} />}
+            </button>
+          </li>
         </ul>
 
-        <button onClick={handleOpen} className='bg-white z-[999] block xl:hidden rounded-[8px]' >
-          <Text size={48} color='#a80b28' strokeWidth={3} />
-        </button>
+        <div className="flex items-center gap-3 xl:hidden">
+          <button
+            onClick={toggleTheme}
+            aria-label="Toggle theme"
+            className='z-[999] block rounded-[8px] p-2 border border-[var(--border-color)]'
+          >
+            {theme === "dark" ? <Sun size={24} /> : <Moon size={24} />}
+          </button>
+          <button onClick={handleOpen} className='z-[999] block rounded-[8px]' >
+            <Text size={48} color='#a80b28' strokeWidth={3} />
+          </button>
+        </div>
 
       </nav>
 
       {isOpen && (
-        <div className="relative top-0 left-0 max-w-[100vw] h-[100vh] bg-[#2c0a10]  text-white  z-50">
+        <div className="relative top-0 left-0 max-w-[100vw] h-[100vh] bg-[var(--mobile-menu-bg)]  text-[var(--mobile-menu-text)]  z-50">
           <div className=" h-full p-5 ">
             {/* <button onClick={handleClose} className="text-black absolute z-50 top-2 right-3 text-2xl">
               <X color="#ffff" size={48} />

@@ -113,7 +113,7 @@ function Portfolio({ isFull }) {
 
 
   return (
-    <section className="bg-gray-200 py-10">
+    <section className="bg-[var(--bg-secondary)] text-[var(--text-primary)] py-10">
       <h2 className=" font-[Dance] border-b-4 border-[#a80a27] text-center text-5xl  font-bold  w-fit mx-auto p-5 ">
         My <span className="bg-gradient-to-l  from-[#a80a27] to-[#8c0eca] text-transparent  blen">Portfolio</span>
       </h2>

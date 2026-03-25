@@ -112,7 +112,7 @@ function Experience({ isFull }) {
   //Short Slider
   if (!isFull) {
     return (
-      <section className="overflow-hidden bg-gray-200 pt-7 pb-16   flex flex-col lg:gap-10 items-center justify-center w-full  ">
+      <section className="overflow-hidden bg-[var(--bg-secondary)] text-[var(--text-primary)] pt-7 pb-16 flex flex-col lg:gap-10 items-center justify-center w-full">
         <h2 className="text-center font-[Dance] py-4 text-5xl border-b-4 border-[#a80a27] w-fit mx-auto font-extrabold">
           <span className="bg-gradient-to-b  from-[#a80a27] to-[#6a039e] blen text-transparent">
             Tech
@@ -122,8 +122,8 @@ function Experience({ isFull }) {
         <div className="w-fit flex mt-15 max-md:gap-4  md:gap-8 items-center justify-center  left-slider">
           {Doubled.map((elem, idx) => (
             <div
-              key={elem.id + idx}
-              className=" bg-white p-2 rounded-lg hover:border-[#a80a27] hover:border-2 transition-all duration-150 max-md:w-[50px] max-md:h-[50px] flex items-center justify-center md:w-[80px] md:h-[80px]  "
+              key={`${elem.id}-${idx}`}
+              className=" bg-[var(--surface-elevated)] p-2 rounded-lg hover:border-[#a80a27] hover:border-2 transition-all duration-150 max-md:w-[50px] max-md:h-[50px] flex items-center justify-center md:w-[80px] md:h-[80px]  "
             >
               <img
                 src={elem.image}
@@ -139,8 +139,8 @@ function Experience({ isFull }) {
         <div className="w-fit flex mt-15 max-md:gap-4  md:gap-8 items-center justify-center  right-slider">
           {Doubled.map((elem, idx) => (
             <div
-              key={elem.id + idx}
-              className=" bg-white p-2 rounded-lg hover:border-[#a80a27] hover:border-2 transition-all duration-150 max-md:w-[50px] max-md:h-[50px] flex items-center justify-center md:w-[80px] md:h-[80px] "
+              key={`${elem.id}-${idx}`}
+              className=" bg-[var(--surface-elevated)] p-2 rounded-lg hover:border-[#a80a27] hover:border-2 transition-all duration-150 max-md:w-[50px] max-md:h-[50px] flex items-center justify-center md:w-[80px] md:h-[80px] "
             >
               <img
                 src={elem.image}
@@ -157,7 +157,7 @@ function Experience({ isFull }) {
   } else {
     return (
       <>
-        <section className="bg-gray-300 pb-20 pt-5">
+        <section className="bg-[var(--bg-primary)] text-[var(--text-primary)] pb-20 pt-5">
           <h2 className="text-center font-[Dance] py-4 text-5xl border-b-4 border-[#a80a27] w-fit mx-auto font-extrabold">
             <span className="bg-gradient-to-b  from-[#a80a27] to-[#6a039e] blen text-transparent">
               Tech
@@ -171,15 +171,16 @@ function Experience({ isFull }) {
           <div className="flex flex-wrap items-center justify-center gap-14  mx-auto mt-20">
             {ExperienceInfo.map((elem, idx) => (
               <div
-                key={elem.id + idx}
-                className="bg-red-50 exp-card h-[290px] max-sm:h-[320px] w-[510px] xl:w-[550px] max-sm:w-[96%]  p-5  rounded-xl  transition-all duration-300 box-border  "
+                key={`${elem.id}-${idx}`}
+                className="bg-[var(--experience-card-bg)] exp-card h-[290px] max-sm:h-[320px] w-[510px] xl:w-[550px] max-sm:w-[96%]  p-5  rounded-xl  transition-all duration-300 box-border border border-[var(--border-color)]"
               >
                 <div className="flex gap-6  items-center ">
-                  <div className=" bg-white abc p-2 rounded-lg   w-[60px] h-[60px] flex items-center justify-center ">
+                  <div className=" bg-[var(--surface-elevated)] abc p-2 rounded-lg   w-[60px] h-[60px] flex items-center justify-center ">
                     <img
                       src={elem.image}
                       alt="logo"
                       className="object-cover"
+                      
                       width={50}
                       height={50}
                     />
@@ -194,16 +195,16 @@ function Experience({ isFull }) {
                     </h6>
                   </div>
                 </div>
-                <p className="mt-4 border-gray-400 border-b-[1px] pb-4">
+                <p className="mt-4 border-[var(--border-color)] border-b-[1px] pb-4 text-[var(--text-muted)]" style={{ fontFamily: "var(--font-primary)" }}>
                   {elem.desc}
                 </p>
 
                 <div className="mt-4 max-sm:mt-2 px-2">
                   <div className="flex items-center justify-between ">
-                    <span>Proficiency</span>
+                    <span style={{ fontFamily: "var(--font-navbar)" }}>Proficiency</span>
                     <span className="text-[#a80a27]">{elem.proficiency}</span>
                   </div>
-                  <div className="bg-gray-300 max-sm:mt-1 mt-2 h-3 rounded-4xl">
+                  <div className="bg-[var(--border-color)] max-sm:mt-1 mt-2 h-3 rounded-4xl">
                     <div
                       className="bg-[#a80a27] h-full rounded-4xl"
                       style={{ width: elem.proficiency }}
