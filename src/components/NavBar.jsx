@@ -31,11 +31,11 @@ function NavBar({ theme, toggleTheme }) {
         </div>
 
         <ul className=" hidden xl:flex gap-8  text-[20px]  uppercase font-semibold list-none  " style={{ fontFamily: "Roboto, sans-serif" }} >
-          <li className='mt-1 cursor-pointer hover:text-[#a80a27] transition-all duration-300 ' ><NavLink to={"/"}  > Home</NavLink> </li>
-          <li className='mt-1 cursor-pointer hover:text-[#a80a27] transition-all duration-300 ' ><NavLink to={"/about"} > About</NavLink> </li>
-          <li className='mt-1 cursor-pointer hover:text-[#a80a27] transition-all duration-300 ' ><NavLink to={"/portfolio"}  > Portfolio</NavLink> </li>
-          <li className='mt-1 cursor-pointer hover:text-[#a80a27] transition-all duration-300 ' ><NavLink to={"/service"} > Services</NavLink> </li>
-          <li className='mt-1 cursor-pointer hover:text-[#a80a27] transition-all duration-300 ' ><NavLink to={"/experience"} > Experience</NavLink> </li>
+          <li className='mt-1 cursor-pointer hover:text-[#a80a27] transition-all duration-300 ' ><NavLink className={"pb-1"} to={"/"}  > Home</NavLink> </li>
+          <li className='mt-1 cursor-pointer hover:text-[#a80a27] transition-all duration-300 ' ><NavLink className={"pb-1"} to={"/about"} > About</NavLink> </li>
+          <li className='mt-1 cursor-pointer hover:text-[#a80a27] transition-all duration-300 ' ><NavLink className={"pb-1"} to={"/portfolio"}  > Portfolio</NavLink> </li>
+          <li className='mt-1 cursor-pointer hover:text-[#a80a27] transition-all duration-300 ' ><NavLink className={"pb-1"} to={"/service"} > Services</NavLink> </li>
+          <li className='mt-1 cursor-pointer hover:text-[#a80a27] transition-all duration-300 ' ><NavLink className={"pb-1"} to={"/experience"} > Experience</NavLink> </li>
           <li className='xl:ml-20'>
             <Button text="Contact"
               onClick={() => {
@@ -59,7 +59,7 @@ function NavBar({ theme, toggleTheme }) {
           <button
             onClick={toggleTheme}
             aria-label="Toggle theme"
-            className='z-[999] block rounded-[8px] p-2 border border-[var(--border-color)]'
+            className='z-[999] block cursor-pointer rounded-[8px] p-2 border border-[var(--border-color)]'
           >
             {theme === "dark" ? <Sun size={24} /> : <Moon size={24} />}
           </button>
