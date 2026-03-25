@@ -30,7 +30,7 @@ function NavBar({ theme, toggleTheme }) {
           <img src={Logo} className=" w-[160px] max-sm:w-[100px] object-cover " alt="ogo" />
         </div>
 
-        <ul className=" hidden xl:flex gap-8  text-[20px]  uppercase font-semibold list-none  " style={{ fontFamily: "Inter, sans-serif" }} >
+        <ul className=" hidden xl:flex gap-8  text-[20px]  uppercase font-semibold list-none  " style={{ fontFamily: "Roboto, sans-serif" }} >
           <li className='mt-1 cursor-pointer hover:text-[#a80a27] transition-all duration-300 ' ><NavLink to={"/"}  > Home</NavLink> </li>
           <li className='mt-1 cursor-pointer hover:text-[#a80a27] transition-all duration-300 ' ><NavLink to={"/about"} > About</NavLink> </li>
           <li className='mt-1 cursor-pointer hover:text-[#a80a27] transition-all duration-300 ' ><NavLink to={"/portfolio"}  > Portfolio</NavLink> </li>
