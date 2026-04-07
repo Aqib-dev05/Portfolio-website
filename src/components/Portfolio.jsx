@@ -13,11 +13,21 @@ import ManaPic from "../assets/Pics/mana.webp"
 import JobSeekPic from "../assets/Pics/jobseek.webp"
 import Tms2 from "../assets/Pics/tmss.webp"
 import Cama from "../assets/Pics/cama.webp"
+import ClickB from "../assets/Pics/clicknb.png"
 import Button from "./Button";
 import { Link } from "react-router";
 
 function Portfolio({ isFull }) {
   const ProjDesc = [
+     {
+      id: 0,
+      title: "ClicknBuy Ecommerce Website",
+      description:
+        "A full-stack e-commerce website built with the MERN stack. It features user authentication, product listings, a shopping cart, and order processing. The platform is designed to be responsive and user-friendly.",
+      image: ClickB,
+      link: "https://clicknbuy-frontend.vercel.app",
+      borderColor: "#0fac8d",
+    },
     {
       id: 1,
       title: "Task Management System",
@@ -109,7 +119,7 @@ function Portfolio({ isFull }) {
     },
   ];
 
-  const ProjDescShort = ProjDesc.slice(0, 2);  //for home page
+  const ProjDescShort = ProjDesc.slice(0, 3);  //for home page
 
 
   return (
